@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Juegos Entregable 2</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/registro.css" />
+</head>
+
+<body>
+
+    <section class="main-container">
+        <div class="divisor"></div>
+        </div>
+        <div class="logo">
+            <img src="./assets/img/logo.svg" alt="logo super juegos">
+            <img src="./assets/img/texto-logo.svg" alt="texto logo super juegos">
+        </div>
+        <div class="tipos-de-login">
+
+            <h1 >REGISTRATE PARA DISFRUTAR DE LOS MEJORES JUEGOS!!!</h2>
+            <h2>Unete Hoy!!</h2>
+            <button class="boton-google"><img src="./assets/img/google.svg" alt="logo google">
+                Sign in with Google
+            </button>
+            <button class="boton-facebook"> <img src="./assets/img/facebook.svg" alt="logo facebook">Sign in with
+                Facebook
+            </button>
+            <h2>O</h2>
+            <button class="boton-primario boton-registrarse ">
+                crear cuenta
+            </button>
+            <p class="politica-de-privacidad">Al registrarte, aceptas los <span>Términos de servicio</span> y la
+                <span>Política
+                    de privacidad,</span> incluida la <span>política de Uso de Cookies</span>.
+            </p>
+            <h2>¿Ya tienes cuenta? </h2>
+            <button class="boton-secundario boton-iniciar-sesion ">
+                iniciar sesión
+            </button>
+
+
+        </div>
+    </section>
+    <footer>
+        <div class="divisor"></div>
+        <div class="info">
+            <div class="logosContainer">
+                <div class="logoSuperJuegos">
+                    <img class="logoCircular" src="./assets/img/logo.svg" alt="logo super juegos">
+                    <img class="letrasDelLogo" src="./assets/img/texto-logo.svg" alt="">
+                </div>
+                <div class="redesSociales">
+                    <img src="./assets/img/facebook.svg" alt="logo facebook">
+                    <img src="./assets/img/instagram.svg" alt="logo instagram">
+                    <img src="./assets/img/twitter.svg" alt="logo twitter">
+                </div>
+            </div>
+            <div class="acerca-de infoTextos">
+                <a>Acerca de</a>
+                <a>Super Juegos</a>
+                <a>Tendencias</a>
+                <a>Blog</a>
+                <a>Developers</a>
+                <a>Trabaja con nosotros</a>
+
+            </div>
+            <div class="ayuda infoTextos">
+                <a>Ayuda</a>
+                <a>FAQ's</a>
+                <a>Soporte tecnico</a>
+                <a>Centro de seguridad</a>
+                <a>Terminos de uso</a>
+            </div>
+            <div class="idiomas infoTextos">
+                <a>Idiomas</a>
+                <a>Español</a>
+                <a>English</a>
+                <a>Italiano</a>
+                <a>Deutsch</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="linea"></div>
+            <p>Copyright © 2023, SuperJuegos , Inc . All rights reserved</p>
+        </div>
+    </footer>
+    <div class="overlay hide"></div>
+    <div class="formulario-contenedor hide">
+
+        <button class="boton-cerrar">
+            <img src="./assets/img/cruz-icono.svg" alt="boton cerrar">
+        </button>
+
+        <img class="logo" src="./assets/img/logo.svg" alt="logo de super juegos">
+        <h2 id="aaaddd">Registrate para jugar online y divertirte!!</h2>
+
+        <form action="" class="form-registro hide">
+            <p>Campo requerido * </p>
+            <label for="">Nombre <span>*</span></label>
+            <input type="text">
+            <label for="">Apellido <span>*</span></label>
+            <input type="text">
+            <label for="">Fecha de Nacimiento <span>*</span></label>
+            <div class="fecha-de-nacimiento">
+                <select id="dia" name="dia">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <!-- Agrega más opciones de día según sea necesario -->
+                </select>
+                <select id="mes" name="mes">
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+                <select id="ano" name="ano">
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
+            <label for="">Mail <span>*</span></label>
+            <input type="text">
+            <label for="">Contraseña <span>*</span></label>
+            <input type="text">
+            <label for="">Repite Contraseña <span>*</span></label>
+            <input type="text">
+
+            <div class="reCAPTCHA">
+                <input type="checkbox" name="no-soy-un-robot" id="">
+                <p>No soy un robot</p>
+                <img src="./assets/img/recaptcha-logo.svg" alt="logo recaptcha">
+            </div>
+
+            <button class="boton-registrarse-enviar boton-primario"> REGISTRARSE</button>
+        </form>
+        <form action="" class="form-iniciar-sesion hide">
+            <p>Campo requerido * </p>
+            <label for="">Nombre <span>*</span></label>
+            <input type="text">
+            <label for="">Apellido <span>*</span></label>
+            <input type="text">
+            <button class="boton-inicio-sesion-enviar boton-primario">ENVIAR</button>
+        </form>
+        <div class="mensaje-registro-con-exito hide">
+            <h2> Bien hecho! has sido registrado con exito!</h2>
+            <div>
+                <img src="./assets/img/Checked-success-exito.png" alt="">
+            </div>
+            <h2> Cick aqui para empezar a jugar</h2>
+            <button class="boton-exito-al-home boton-secundario"> ENTENDIDO</button>
+        </div>
+            
+    </div>
+    <div class="loader hide">
+        <div class="barraDeCarga">
+            <div class="texto"></div>
+        </div>
+    </div>
+    <script src="./js/registro.js"></script>
+</body>
+
+</html>

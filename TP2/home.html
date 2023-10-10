@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Juegos Entregable 2</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel=" stylesheet" href="css/main-home.css" />
+</head>
+
+<body>
+    <header>
+
+        <!-- menu hamburguesa desplegagle -->
+        <div class="contenedor-menu-y-logo">
+            <div id="nav-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <img class="logo-prin" src="assets/img/logo.svg" alt="logo super juegos">
+                <img src="assets/img/texto-logo.svg" class="super-juegos" alt="super juegos">
+            </div>
+        </div>
+        <div class="cont-menu" id="menu">
+            <ul>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-inicio.svg" class="icono-menu"> Inicio </li>
+                <li class="texto-menu icono-menu-buscar-juego"> <img src="assets/img/iconos/icono-buscar.svg"
+                        class="icono-menu "> Buscar Juego </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-nuevos.svg" class="icono-menu"> Nuevos </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-tendencias.svg" class="icono-menu"> Tendencias
+                </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-accion.svg" class="icono-menu"> Accion </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-carrera.svg" class="icono-menu"> Carrera </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-clasicos.svg" class="icono-menu"> Clásicos
+                </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-deporte.svg" class="icono-menu"> Deportes
+                </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-estrategia.svg" class="icono-menu"> Estrategia
+                </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-infantiles.svg" class="icono-menu"> Infantiles
+                </li>
+            </ul>
+        </div>
+
+        <!-- logo que desaparece en desktop -->
+        <div class="logoParaMobile">
+            <img class="logo-prin" src="assets/img/logo.svg" alt="logo super juegos">
+            <img src="assets/img/texto-logo.svg" class="super-juegos" alt="super juegos">
+        </div>
+
+        <input type="text" class="input-buscar" list="sugerencias" placeholder="Buscar juego...">
+        <datalist id="sugerencias">
+            <option value="Cuatro en linea Tomy vs Daly">
+            <option value="Fireboy and Watergirl">
+            <option value="Plants vs zombies">
+            <option value="Mario kart">
+            <option value="Mountain bike">
+            <option value="Mario 2.0">
+
+        </datalist>
+
+        <div class="contenedor-principal-menu-usuario">
+            <div class="usuario-logueado-container">
+                <div>
+                    <img src="assets/img/carrito.svg" class="carrito" alt="logo carrito">
+
+                </div>
+                <div class="usuario-logueado">
+                    <img src="assets/img/usuario-logueado.svg" alt="logo usuario logueado">
+                    <p>Pepe123</p>
+                </div>
+            </div>
+            <div class="cont-menu-user hide" id="menu-user">
+                <div class="usuario-logueado-menu">
+                    <img class="usuario-logueado" src="assets/img/usuario-logueado.svg" alt="logo usuario logueado">
+                    <div class="detalles-usuario">
+                        <a class="nombre-usuario"> Hola Pepe123!</a>
+                        <p>pepe123@gmail.com</p>
+                    </div>
+                    <div class="linea"></div>
+                </div>
+                <ul>
+                    <li class="texto-menu"> <img src="assets/img/iconos/icono-user.svg" class="icono-menu-user"> Mi
+                        cuenta </li>
+                    <li id="menu-user-mobile-carrito" class="texto-menu "> <img
+                            src="assets/img/iconos/icono-carrito.svg" class="icono-menu-user">Mis Compras </li>
+                    <li class="texto-menu"> <img src="assets/img/iconos/icono-estrella.svg" class="icono-menu-user">
+                        Mis juegos </li>
+                    <li class="texto-menu"> <img src="assets/img/iconos/icono-editar.svg" class="icono-menu-user">
+                        Editar cuenta </li>
+                    <li class="texto-menu"> <img src="assets/img/iconos/icono-ajustes.svg" class="icono-menu-user">
+                        Configuracion de cuenta </li>
+                    <li class="texto-menu"> <img src="assets/img/iconos/icono-salir.svg" class="icono-menu-user">
+                        Cerrar cuenta </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="divisor"></div>
+
+
+
+
+
+    <!-- Carrusel Grande -->
+    <section class="container-componente-carousel-grande">
+        <h1 class="titulo-carusel">Bienvenido Pepe123, estos los juegos de la semana recomendados para vos</h1>
+        <div class="carrusel-grande-container">
+            <div class="boton-izq"> <img src="./assets/img/iconos/icono-flechita-izquierda.svg"></div>
+                <div class="imagenes-container">
+                    <div class="imagenes">
+                        <div class="img img1">
+                            <img class="img-desktop" src="./assets/img/imgs-juegos/carrusel-grande-subway.png" alt="">
+                            <img class="img-mobile" src="./assets/img/imgs-juegos/carrousel-mobile-subway-surfers.png" alt="">
+                        </div>
+                        <div class="img img2">
+                            <img class="img-desktop" src="./assets/img/imgs-juegos/carrusel-grande-mario.png" alt="">
+                            <img  class="img-mobile" src="./assets/img/imgs-juegos/carrousel-mobile-mario.png" alt="">
+                        </div>
+                        <div class="img img3">
+                            <img class="img-desktop" src="./assets/img/imgs-juegos/carrusel-grande-candycrush.png" alt="">
+                            <img class="img-mobile" src="./assets/img/imgs-juegos/carrousel-mobile-candy-crush.png" alt="">
+                        </div>
+                    </div>
+            </div>
+            
+
+            
+                <div class="boton-der"> <img src="./assets/img/iconos/icono-flechita-derecha.svg"> </div>
+            </div>
+    </section>
+
+
+
+
+
+    <!-- carrusel chico 2 -->
+    <div class="container-componente-carousel">
+        <h1 class="titulo-carusel">Los Juegos de tu biblioteca, disponibles para jugar</h1>
+
+        <div class="container-carrusel2">
+            <div class="boton-izquierda"> <img src="./assets/img/iconos/icono-flechita-izquierda.svg"></div>
+
+            <div class="carousel">
+                <div class="slide slideCarruselScroll">
+                    <img src="assets/img/imgs-juegos/mahjong.webp" />
+                    <div class="titulo-card">
+                        <h2>Mahjong online</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+
+                <div class="slide slideCarruselScroll">
+                    <img src="assets/img/imgs-juegos/bad-ice-cream.webp" />
+                    <div class="titulo-card">
+                        <h2>Bad Ice Cream</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+                <div class="slide slideCarruselScroll">
+                    <img src="assets/img/imgs-juegos/roblox-online.webp" />
+                    <div class="titulo-card">
+                        <h2>Roblox Online</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+                <div class="slide slideCarruselScroll">
+                    <img src="assets/img/imgs-juegos/minecraft.jpg" />
+                    <div class="titulo-card">
+                        <h2>Minecraft</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+                <div class="slide slideCarruselScroll">
+                    <img src="assets/img/imgs-juegos/tomy-vs-daly.png" />
+                    <div class="titulo-card">
+                        <h2>Tomy Vs Daly 4 en linea</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar" id="botonJugarTomy"> JUGAR </button>
+                    </div>
+                </div>
+                <div class="slide slideCarruselScroll">
+                    <img src="assets/img/imgs-juegos/marioKart.jpg" />
+                    <div class="titulo-card">
+                        <h2>Mario Kart</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+                <div class="slide slideCarruselScroll">
+                    <img src="assets/img/imgs-juegos/tanksArena.webp" />
+                    <div class="titulo-card">
+                        <h2>Tanks Arena</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+                <div class="slide slideCarruselScroll">
+                    <img src="assets/img/imgs-juegos/amongUs.webp" />
+                    <div class="titulo-card">
+                        <h2>Among Us</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="boton-derecha2"> <img src="./assets/img/iconos/icono-flechita-derecha.svg"></div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- carrusel chico nuevos-->
+
+    <div class="container-componente-carousel">
+        <h1 class="titulo-carusel">Nuevos</h1>
+
+
+        <div class="container-carrusel2">
+            <div class="boton-izquierda"> <img src="./assets/img/iconos/icono-flechita-izquierda.svg"></div>
+
+            <div class="carousel">
+
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/sonic.webp" />
+                    <div class="titulo-card2">
+                        <h2>Sonic 2.0</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 1000 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/cardsSpeed.webp" />
+                    <div class="contenedor-etiqueta-gratis">
+                        <p class="etiqueta-gratis"> Gratis! </p>
+                    </div>
+                    <div class="titulo-card">
+                        <h2>Cards Speed</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio-gratis"> $ 50 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/cupHead.webp" />
+                    <div class="titulo-card2">
+                        <h2>Cup Head - una aventura entre amigos</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 1500 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/fastJoe.webp" />
+                    <div class="titulo-card2">
+                        <h2>Fast Joe</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 1000 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/fireboyandWatergirl.webp" />
+                    <div class="contenedor-etiqueta-gratis">
+                        <p class="etiqueta-gratis"> Gratis! </p>
+                    </div>
+                    <div class="titulo-card">
+                        <h2>Fireboy and Watergirl</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio-gratis"> $ 500 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/buubleShooter.webp" />
+                    <div class="titulo-card2">
+                        <h2>Bubble Shooter</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 1000 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/fancyBlast.webp" />
+                    <div class="titulo-card2">
+                        <h2>Fancy Blast</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 1800 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/shellShockers.webp" />
+                    <div class="titulo-card2">
+                        <h2>Shell Shockers</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 1300 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="boton-derecha2"> <img src="./assets/img/iconos/icono-flechita-derecha.svg"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- carrusel chico accion -->
+    <div class="container-componente-carousel">
+        <h1 class="titulo-carusel">Accion</h1>
+
+
+        <div class="container-carrusel2">
+            <div class="boton-izquierda"> <img src="./assets/img/iconos/icono-flechita-izquierda.svg"></div>
+
+            <div class="carousel">
+
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/amongUs.webp" />
+                    <div class="contenedor-etiqueta-gratis">
+                        <p class="etiqueta-gratis"> Gratis! </p>
+                    </div>
+                    <div class="titulo-card">
+                        <h2>Among Us</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio-gratis"> $ 50 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/superMario.jpg" />
+                    <div class="titulo-card2">
+                        <h2>Super Mario</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 2000 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/StickWar.webp" />
+                    <div class="contenedor-etiqueta-gratis">
+                        <p class="etiqueta-gratis"> Gratis! </p>
+                    </div>
+                    <div class="titulo-card">
+                        <h2>Stick War</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio-gratis"> $ 2550 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/fortnite.jpg" />
+                    <div class="titulo-card2">
+                        <h2>Fortnite</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 3000 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/img/imgs-juegos/inmortalKombat.webp" />
+                    <div class="titulo-card2">
+                        <h2>Inmortal Kombat</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 5000 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Aca estaban las otras -->
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/boxingKing.webp" />
+                    <div class="titulo-card">
+                        <h2>Boxing King</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/geometryDash.webp" />
+                    <div class="titulo-card">
+                        <h2>Geometry Dash</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/survive.io.webp" />
+                    <div class="titulo-card">
+                        <h2>Survive io</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="boton-derecha2"> <img src="./assets/img/iconos/icono-flechita-derecha.svg"></div>
+
+        </div>
+
+    </div>
+
+    <!-- carussel chico carrera-->
+    <div class="container-componente-carousel">
+        <h1 class="titulo-carusel">Carrera</h1>
+
+
+        <div class="container-carrusel2">
+            <div class="boton-izquierda"> <img src="./assets/img/iconos/icono-flechita-izquierda.svg"></div>
+
+            <div class="carousel">
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/motoRoad.jpg" />
+                    <div class="titulo-card">
+                        <div class="contenedor-vacio"></div>
+                        <h2>Moto Road</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 2000 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="slide">
+
+                    <img src="assets/img/imgs-juegos/superSnappy.webp" />
+
+                    <div class="contenedor-etiqueta-gratis">
+                        <p class="etiqueta-gratis"> Gratis! </p>
+                    </div>
+                    <div class="titulo-card">
+
+
+                        <h2>Super Snappy</h2>
+
+
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio-gratis"> $ 2550 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/marioKart.jpg" />
+                    <div class="titulo-card">
+                        <div class="contenedor-vacio"></div>
+                        <h2>Mario Kart</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 1000 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="slide ">
+
+                    <img src="assets/img/imgs-juegos/ball3d.webp" />
+                    <div class="titulo-card">
+                        <div class="contenedor-vacio"></div>
+                        <h2>Ball 3d</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 950 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/mountainBike.jpg" />
+                    <div class="titulo-card">
+                        <div class="contenedor-vacio"></div>
+                        <h2>Mountain Bike</h2>
+                        <div class="contenedor-carrito-precio">
+                            <p class="precio"> $ 1500 </p>
+                            <div class="icono-carrito">
+                                <img src="assets/img/iconos/icono-carrito.svg" alt="icono carrito">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/StreetCarRace.jpg" />
+                    <div class="titulo-card">
+                        <h2>Street Car Race</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/Ultimate Offroad.jpg" />
+                    <div class="titulo-card">
+                        <h2>Ultimate Offroad</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/rivalsStarsHorse.jpg" />
+                    <div class="titulo-card">
+                        <h2>Rivals Stars Horse</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="boton-derecha2"> <img src="./assets/img/iconos/icono-flechita-derecha.svg"></div>
+
+        </div>
+
+    </div>
+
+    <!-- carrusel chico clasicos -->
+    <div class="container-componente-carousel">
+        <h1 class="titulo-carusel">Clásicos</h1>
+
+
+        <div class="container-carrusel2">
+            <div class="boton-izquierda"> <img src="./assets/img/iconos/icono-flechita-izquierda.svg"></div>
+
+            <div class="carousel">
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/tetris.webp" />
+                    <div class="titulo-card">
+                        <h2>Tetris</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/pacman.webp" />
+                    <div class="titulo-card">
+                        <h2>Pacman io</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/dragonBall.jpg" />
+                    <div class="titulo-card">
+                        <h2>Dragon Ball </h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/uno.webp" />
+                    <div class="titulo-card">
+                        <h2>Uno Online</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/poker.webp" />
+                    <div class="titulo-card">
+                        <h2>Poker</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/bingo.jpg" />
+                    <div class="titulo-card">
+                        <h2>Bingo</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/domino.webp" />
+                    <div class="titulo-card">
+                        <h2>Dominó</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+                <div class="slide ">
+                    <img src="assets/img/imgs-juegos/trucoArg.jpg" />
+                    <div class="titulo-card">
+                        <h2>Truco Argentino</h2>
+                        <p class="texto-chico">En tu biblioteca <img src="assets/img/iconos/icono-check.svg"
+                                alt="icono-check"> </p>
+                        <button class="boton-jugar"> JUGAR </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="boton-derecha2"> <img src="./assets/img/iconos/icono-flechita-derecha.svg"></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="divisor"></div>
+        <div class="info ">
+            <div class="logosContainer">
+                <div class="logoSuperJuegos">
+                    <img class="logoCircular" src="./assets/img/logo.svg" alt="logo super juegos">
+                    <img class="letrasDelLogo" src="./assets/img/texto-logo.svg" alt="">
+                </div>
+                <div class="redesSociales">
+                    <img src="./assets/img/facebook.svg" alt="logo facebook">
+                    <img src="./assets/img/instagram.svg" alt="logo instagram">
+                    <img src="./assets/img/twitter.svg" alt="logo twitter">
+                </div>
+            </div>
+            <div class="acerca-de infoTextos">
+                <a>Acerca de</a>
+                <a>Super Juegos</a>
+                <a>Tendencias</a>
+                <a>Blog</a>
+                <a>Developers</a>
+                <a>Trabaja con nosotros</a>
+
+            </div>
+            <div class="ayuda infoTextos">
+                <a>Ayuda</a>
+                <a>FAQ's</a>
+                <a>Soporte tecnico</a>
+                <a>Centro de seguridad</a>
+                <a>Terminos de uso</a>
+
+            </div>
+            <div class="idiomas infoTextos">
+                <a>Idiomas</a>
+                <a>Español</a>
+                <a>English</a>
+                <a>Italiano</a>
+                <a>Deutsch</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="linea"></div>
+            <p>Copyright © 2023, SuperJuegos , Inc . All rights reserved</p>
+        </div>
+    </footer>
+   
+    <script src="./js/home.js"></script> 
+    <script src="./js/modoEjecucion.js"></script>
+</body>
+
+</html>
