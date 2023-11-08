@@ -304,7 +304,7 @@ function onMouseDown(e) {
     //verifica si se hizo click 
     verificarSiSeClickeoAlgunBoton(e.offsetX, e.offsetY);
 
-    if (ultimaFichaClickeada != null) {
+    if (ultimaFichaClickeada != null && Ganador==0) {
         ultimaFichaClickeada.setResaltado(false);
         ultimaFichaClickeada = null;
     }
