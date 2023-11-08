@@ -1,0 +1,168 @@
+@import url('header.css');
+@import url('footer.css');
+@import url('registro.css');
+@import url('modoEjecucion.css');
+@import url('main-home.css');
+
+
+@font-face {
+  font-family: 'Baloo'; /* El nombre que quieras darle a tu fuente */
+  src: url('../assets/fonts/Baloo-Regular.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+}
+@font-face {
+  font-family: 'Roboto'; /* El nombre que quieras darle a tu fuente */
+  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+}
+
+:root {
+  --primario: #FFFF1A;
+  --primario-l1: #ffffb8;
+  --primario-l2: #ffffdd;
+  --primario-s1: #e6e617;
+  --primario-s2: #bfbf14;
+  --secundario: #ed0080;
+  --secundario-l1: #f9b0d8;
+  --secundario-l2: #fcd9ec;
+  --secundario-s1: #d50073;
+  --secundario-s2: #be0066;
+  --acento: #0fbaff;
+  --blanco: #f7f6e7;
+  --negro: #282b30;
+  --negro-l1: #474747;
+  --negro-prueba: #343434;
+  --negro-opciones-juego:#4F4F4F;
+  --negro-background-registro: #343434;
+  --negro-n1: #2B2B2B;
+  --exito: #84f984;
+  --exito-letra: #244c26;
+  --error: #ffbea3;
+  --error-letra: #d31c1c;
+  --alerta: #ffe5a3;
+  --alerta-letra:#776c08;
+  --gris-claro: #f6f6f6; /*input relleno*/
+  --gris-oscuro: #b0afaf; /*input bordes*/
+  --gradiente-horizontal: linear-gradient(to right, var(--primario), var(--secundario)); /*background-image: */
+  --gradiente-diagonal: linear-gradient(to bottom right, var(--primario), var(--secundario)); /*background-image: */
+  /* Sombras */
+  --sombra1: 6px 10px 6px  rgba(0, 0, 0, 0.50);
+  --sombra2: 20px 16px 0px rgba(0, 0, 0, 0.16);
+  --sombra3: 5px 5px 5px  rgba(0, 0, 0, 0.16); 
+  /* Estos van dentro del atributo font:var(--la-que-quieras) */
+  --texto-body: normal normal normal 15px 'Roboto', sans-serif;
+  --texto-chico: normal normal normal 13px 'Roboto', sans-serif;
+  --texto-botones: normal normal normal 14px 'Roboto', sans-serif ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 24px;
+  font-family: 'Baloo', sans-serif;
+  letter-spacing: 2px;
+  font-style: normal;
+  line-height: normal;
+}
+h2{
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif; 
+  font-style: normal;
+  line-height: normal;
+}
+h3{
+  font-family: Roboto Flex;
+  font-size: 15px;
+  font-style: normal;
+  line-height: normal;
+}
+
+p , label {
+  font: var(--texto-body);
+}
+
+.boton-google{
+  background-color: #FFF;
+  color: rgb(0,0,0,0.54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton-google:hover{
+  background-color: #D4E1F3;
+  color: rgb(0,0,0,0.54);
+  border: 3px solid #1D9BF0;
+}
+.boton-google img{
+  width: 18px;
+  height: 18px;
+  margin-right: 14px;
+}
+
+.boton-facebook{
+  background-color: #1877F2;
+  color: var(--blanco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton-facebook:hover{
+  background-color: var(--blanco);
+  color: #4194FF;
+  border: 2px solid var(--blanco);
+}
+.boton-facebook img{
+  width: 18px;
+  height: 18px;
+  margin-right: 10px; 
+  
+}
+
+.boton-primario{
+  background-color: var(--primario);
+  color: var(--negro);
+  text-transform: uppercase;
+}
+.boton-primario:hover{
+  background-color: var(--primario-s1);
+  color: var(--secundario);
+}
+.boton-secundario{
+  background-color: transparent;
+  border: 2px solid var(--primario);
+  color: var(--blanco);
+  text-transform: uppercase;
+}
+.boton-secundario:hover{
+  background-color: var(--primario-s1);
+  color: var(--secundario);
+}
+
+.show{
+  display: flex !important;
+}
+
+.hide{
+  display: none !important;
+}
+
+
+/* como dice min-width, se empieza a aplicar desde ahi, estilos para todo lo que tenga un minimo de 1440px */
+html{
+  background-color: rgba(63, 57, 57, 0.737);
+}
+body{
+  background: var(--Negro-L1, #474747);    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 1440px;
+}
