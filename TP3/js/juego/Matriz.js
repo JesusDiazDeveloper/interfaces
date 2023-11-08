@@ -134,8 +134,6 @@ class Matriz {
         if (this.checkearTodaLaMatrizLogica(ficha, fila, columna)) {
             return true;
         }
-        if (this.#verificarEmpate()) {
-        }
         return false;
 
     }
@@ -287,7 +285,7 @@ class Matriz {
         }
         return true;
     }
-    #verificarEmpate() {
+    verificarEmpate() {
         let fila = 0;
         for (let i = 0; i < this.MAXCOLUMNA; i++) {
             if (this.matrizLogica[fila][i] == 0) {

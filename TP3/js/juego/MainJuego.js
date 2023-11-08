@@ -14,6 +14,8 @@ backgroundImage.src = 'assets/img/juego/FondoJuego.png';
 
 let sonidoHabilitado = true;
 
+let hayEmpate = false;
+
 const imagenTurno = new Image();
 imagenTurno.src = "assets/img/juego/flechaAbajo.png";
 imagenTurno.onload = function () {
@@ -35,7 +37,7 @@ canvasJuego.addEventListener('mousedown', onMouseDown, false);
 canvasJuego.addEventListener('mouseup', onMouseUp, false);
 canvasJuego.addEventListener('mousemove', onMouseMove, false);
 
-let anchoCasilla = 50; 
+let anchoCasilla = 50;
 let altoCasilla = anchoCasilla;
 
 //logica para mostrar el timer restante
@@ -124,8 +126,8 @@ let XEnLineaSeleccionado;
         crearJuego();
     })
 
-    //Despues cambiar y dejar el click de arriba!!
-
+    // funcion para evitar el boton de inicio y que al cargar el documento, 
+    // directamente aparezca el canvas con el juego 
 
     // document.addEventListener("DOMContentLoaded", () => {
     //     contenedorJuegoPrevioAJugar.classList.add("oculto");
@@ -182,17 +184,26 @@ let XEnLineaSeleccionado;
         timer.drawTimer(tiempoRestante, canvasWidth); //dibuja el temporizador en el canvas
         drawBotones(); //dibuja los botones en el canvas
         mostrarTurnoDelJugador();
-        
+
         let ficha;
 
         //si hay un ganador muestra el ganador en el canvas sino le aplica brillo a las fichas del jugador actual
         if (Ganador != 0) {
             mostrarGanador(Ganador)
         }
+
+        if(hayEmpate){
+            mostrarEmpate()
+        }
+
         for (let i = 0; i < fichas.length; i++) {
             ficha = fichas[i];
-            if (Ganador != 0) {
-                ficha.setBrilloExterior(false);
+            if (Ganador != 0 || hayEmpate) { // si es distinto de 0, quiere decir que hubo un ganador, y no deben moverse mas
+                ficha.setBrilloExterior(false); // le saco el brillo a la ficha para moverlo
+                for (let i = 0; i < fichas.length; i++) {
+                    const element = fichas[i];
+                    element.setEstaFija(true);
+                }
             }
             else if (ficha.getJugador() == turno && ficha.estaEnLaPosicionIncial()) {
                 ficha.setBrilloExterior(true);
@@ -308,7 +319,7 @@ function onMouseDown(e) {
 
     drawAll();
 }
-    //  encuentra la ficha clickeada y recibe su x e y del click del mouse las cuales indican la posicion en donde se hizo click
+//  encuentra la ficha clickeada y recibe su x e y del click del mouse las cuales indican la posicion en donde se hizo click
 function encontrarFiguraClickeada(x, y) {
     for (let i = 0; i < fichas.length; i++) {
         const element = fichas[i];
@@ -323,14 +334,14 @@ function verificarSiSeClickeoAlgunBoton(x, y) {
     if (botonReiniciar.isPointInside(x, y)) {
         clearCanvas();
         clearInterval(timerInterval);
-        empezarAJugar(); 
+        empezarAJugar();
     }
     //si hace click en el boton configurar, muestra el popup configuracion
     if (botonCambiarConfiguracion.isPointInside(x, y)) {
         canvasJuego.classList.add("oculto");
         popup.classList.remove("oculto");
     }
-    if(botonSonido.isPointInside(x,y)){
+    if (botonSonido.isPointInside(x, y)) {
         sonidoVictoria.pause();
     }
 
@@ -362,10 +373,14 @@ function onMouseUp(e) {
             let columnaDondeSePusoLaFicha = fichaEntroEnLaMatriz.columna;
 
             if (matriz.verificarSiHayGanador(fichaSoltada, filaDondeSePusoLaFicha, columnaDondeSePusoLaFicha)) {
-                if(sonidoHabilitado){
+                if (sonidoHabilitado) {
                     sonidoVictoria.play();
                 }
                 mostrarGanador(fichaSoltada.getJugador());
+            }
+            else if (matriz.verificarEmpate()) {
+                hayEmpate = true;
+                mostrarEmpate();
             }
 
             fichaSoltada.setEstaFija(true);
@@ -500,6 +515,8 @@ function actualizarTiempo() {
 
     } else {
         clearInterval(timerInterval); // Detener el temporizador
+        hayEmpate = true; // seteo la variable como true, quiere decir que hay empate
+        drawAll(); // vuelvo a dibujar para verificar si hay empate y mostrarlo.
     }
 }
 
@@ -529,4 +546,17 @@ function mostrarGanador(ganador) {
         clearInterval(timerInterval);
 
     };
+}
+
+
+function mostrarEmpate() {
+    let texto = `Resultado: Empate`;
+    context.fillStyle = "yellow";
+    context.fillRect((canvasWidth / 2) - 300, (PosYFinDeLaMatriz + 10), 600, 50);
+
+    context.font = "40px 'Baloo', Courier, monospace";
+    context.textAlign = "center";
+    context.fillStyle = "black";
+    context.fillText(texto, canvasWidth / 2, PosYFinDeLaMatriz + 50);
+    clearInterval(timerInterval);
 }
