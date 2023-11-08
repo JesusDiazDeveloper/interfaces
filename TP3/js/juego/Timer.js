@@ -7,12 +7,12 @@ class Timer extends Figura {
         this.setImage();
         this.resaltadoEstilo = "#FF0000";
     }
-
+    //establece la imagen del temporizador
     setImage() {
         this.image.src = "assets/img/juego/Timer.png";
     }
 
-    //Timer
+    // dibuja el temporizador en el canvas. Recibe el tiempo restante en segundos (tiempoRestante) y el ancho del lienzo (canvasWidth) como argumentos.
     drawTimer(tiempoRestante , canvasWidth) {
         const minutos = Math.floor(tiempoRestante / 60);
         const segundos = tiempoRestante % 60;

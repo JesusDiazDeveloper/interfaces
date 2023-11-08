@@ -19,7 +19,6 @@ class Matriz {
         this.anchoCasilla = anchoCasilla;
         this.altoCasilla = altoCasilla
         this.crearMatrizLogica();
-        // this.fichasDelGanador = [];
     }
 
     draw() {
@@ -79,12 +78,6 @@ class Matriz {
 
     }
 
-    // this.numero_del_jugador = 1;
-    // let titulo_jugador_actual = document.querySelector("h2 span");
-
-    // const botonesDeColumnaElegida = document.querySelectorAll('.columnaElegida');
-    // let numJugador = 1;
-
     // Parte Logica: 
 
     // Crear la matriz
@@ -99,10 +92,10 @@ class Matriz {
     }
 
     mostrarMatrizLogica() {
-        console.log("--------------------------");
-        for (let fila = 0; fila < this.MAXFILA; fila++) {
-            this.mostrarArreglo(this.matrizLogica[fila]);
-        }
+        // console.log("--------------------------");
+        // for (let fila = 0; fila < this.MAXFILA; fila++) {
+        //     this.mostrarArreglo(this.matrizLogica[fila]);
+        // }
     }
 
     mostrarArreglo(arr) {
@@ -125,7 +118,6 @@ class Matriz {
         }
 
         if (filaParaVerificar < 0) {
-            console.log(`la columna ${columna} esta llena`);
             return -1;
         }
         else {
@@ -137,14 +129,12 @@ class Matriz {
         this.matrizLogica[fila][columna] = ficha;
     }
 
-
     verificarSiHayGanador(ficha, fila, columna) {
 
         if (this.checkearTodaLaMatrizLogica(ficha, fila, columna)) {
             return true;
         }
         if (this.#verificarEmpate()) {
-            alert("hay empate")
         }
         return false;
 
@@ -180,8 +170,6 @@ class Matriz {
             columnaParaLaIzquierda--;
         }
 
-
-
         this.mostrarMatrizLogica();
         if (contador == this.xEnLinea) {
             this.#resaltarFichasGanadoras(fichasAcumuladas);
@@ -213,7 +201,6 @@ class Matriz {
         return false;
 
     }
-
 
     #checkDiagonals(ficha, fila, columna) {
 
@@ -318,6 +305,3 @@ class Matriz {
     }
 
 }
-
-
-console.log("cargo Matriz");

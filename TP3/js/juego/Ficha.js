@@ -1,7 +1,4 @@
-
-
 class Ficha extends Figura {
-
 
     constructor(posX, posY, imagen, context, radius, jugador, personajeSeleccionado) {
         super(posX, posY, imagen, context)
@@ -18,15 +15,16 @@ class Ficha extends Figura {
         this.brilloExterior = false;
     }
 
-    // reimplemento el draw de figura, no necesito poner Overrride
-    draw() {
+    // método para dibujar la ficha en el canvas, llama a su padre super.draw(), beginPath() inicia un nuevo trazado en el contexto de la ficha,
+    // context.arc() dibuja un circulo, strokeStyle establece la linea de color negro y lineWidth hace que la misma tenga un grosor de 2 pixeles.
+        draw() {
         super.draw();
         this.context.beginPath();
         this.context.arc(this.posX, this.posY, this.radius, 0, 2 * Math.PI);
-        this.context.strokeStyle = "black";
-        this.context.lineWidth = 2;
+        this.context.strokeStyle = "white";
+        this.context.lineWidth =1 ;
 
-        // terminar el resaltado.
+        //si el resaltado es true le agrega un brillo
         if (this.resaltado === true) {
             this.context.save(); // Guardar el estado actual del contexto
             this.context.strokeStyle = this.resaltadoEstilo;
@@ -43,6 +41,7 @@ class Ficha extends Figura {
         }
 
         this.context.stroke();
+        //cierra el camino actual en el contexto que se inicio con beginPath()
         this.context.closePath();
 
         if (this.image) {
@@ -72,35 +71,44 @@ class Ficha extends Figura {
             this.context.restore(); // Restaurar el estado del contexto
         }
     }
-
+    
+    //metodo que setea el brilloExterior 
     setBrilloExterior(brillar) {
         this.brilloExterior = brillar;
     }
-
+    //metodo que obtiene el radio de la ficha
     getRadius() {
         return this.radius;
     }
 
+    //metodo que obtiene el jugador de la ficha
     getJugador() {
         return this.jugador;
     }
+
+    //metodo que obtiene si la ficha esta fija
     getEstaFija() {
         return this.estaFija;
     }
+
+    //metodo que setea si la ficha esta fija
     setEstaFija(estaFija) {
         return this.estaFija = estaFija;
     }
 
-
-    isPointInside(x, y) { // minuto 11:34
+    //Metodo que se utiliza para determinar si un punto con coordenadas (x, y) está dentro de los límites del botón. 
+    isPointInside(x, y) { 
         let _x = this.posX - x;
         let _y = this.posY - y;
         return Math.sqrt(_x * _x + _y * _y) < this.radius;
     }
 
+    //metodo que obtiene la posicion inicial x de la ficha
     getPosInicialX() {
         return this.posicionInicialX;
     }
+
+     //metodo que obtiene la posicion inicial y de la ficha
     getPosInicialY() {
         return this.posicionInicialY;
     }
@@ -108,13 +116,18 @@ class Ficha extends Figura {
     estaEnLaPosicionIncial() {
         return this.posicionInicialX == this.posX && this.posicionInicialY == this.posY;
     }
+
+    //método que setea la imagen de la ficha
     setImage(image) {
         this.image = image;
     }
 
+    //método booleano que obtiene si la imagen de la ficha se cargo por completo
     getImageIsLoaded() {
         return this.ImageIsLoaded;
     }
+
+    //método asociado a cargar la imagen asociada al personaje seleccionado, instancia una imagen y la carga segun la seleccionada.
     seleccionarImagenDeFicha(personajeSeleccionado) {
         let image = new Image();
         switch (personajeSeleccionado) {
@@ -144,6 +157,7 @@ class Ficha extends Figura {
         };
     }
 
+    //método que compara si la ficha es igual a otro objeto. Si el objeto pasado como argumento es otra ficha y ambas fichas tienen el mismo jugador, se considera que son iguales y devuelve true.  
     equals(otroObjeto) {
         if (otroObjeto instanceof Ficha) {
             return this.getJugador() === otroObjeto.getJugador();
@@ -151,5 +165,3 @@ class Ficha extends Figura {
         return false;
     }
 }
-
-console.log("cargo Ficha");
