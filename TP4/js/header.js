@@ -4,7 +4,6 @@
 let navIcon = document.getElementById('nav-icon1');
 let logoHeader = document.querySelector("#logoHeader");
 let logoHeaderMini = document.querySelector("#logoHeaderMini");
-// let contenedorLogoHeader = document.querySelector(".contenedorLogoHeader");
 
 
 // Menu Hamburguesa
@@ -50,12 +49,6 @@ let minHeightOfLogoHeader = 68;
 document.addEventListener('scroll', function () {
 
   let scrollPosition = window.scrollY;
-
-
-
-  // console.log(logoHeader.width);
-
-
   
   // Reducción del tamaño al hacer scroll hacia abajo
   let scale = Math.max(minWidthOfLogoHeader / originalWidthOfLogoHeader, minHeightOfLogoHeader / originalHeightOfLogoHeader);
@@ -79,11 +72,3 @@ document.addEventListener('scroll', function () {
   }
 
 });
-
-
-
-
-
-
-
-console.log("anda el header.js");

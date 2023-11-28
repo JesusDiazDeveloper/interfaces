@@ -16,14 +16,18 @@
   
   #cieloP1{
     width: 100%;
-    height: 823px; 
+    display: flex;
+    transform: scale(1.3);
+    height: 823px;
     background: url("../assets/images/fondoNubesP1.png");
     animation: animationNubesP1 40s linear infinite;
   }
+
   @keyframes animationNubesP1 {
     0% { background-position: 0px; }
     100% { background-position: 2422px;}
-}
+  }
+
 }
 
 
@@ -169,17 +173,6 @@
 
 } 
 
-
-/* .entrarDesdeLado {
-  opacity: 0;
-  transform: translateX(-100px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.entrarDesdeLado-entra {  
-  opacity: 1;
-  transform: translateX(0);
-} */
 
 @keyframes enterFromRight {
   from {
