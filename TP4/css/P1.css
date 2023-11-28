@@ -6,6 +6,8 @@
   height: 823px;
   position: relative;
 }
+
+
 /* Edificios y cielo */
 @media screen {
   
@@ -20,28 +22,35 @@
     100% { background-position: 2422px;}
 }
 }
+
+
+#edificiosDer{
+  position: absolute;
+  bottom: -30px;
+  right: 0px;
+  height: 727.5px;
+  opacity: 0;
+  animation: enterFromRight 1s ease-out 0.2s; /* 1s de retraso */
+}
+
+#edificiosIzq{
+  position: absolute;
+  bottom: -25px;
+  left: -60px;
+  opacity: 0;
+  animation: enterFromLeft 1s ease-out 0.5s; /* 0.5s de retraso */
+}
+
+#edificiosAtras{
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%);
+  animation: enterFromBottom 1s ease-out 0.5s; /* 0.5s de retraso */
+}
   
-  #edificiosDer{
-    position: absolute;
-    bottom: -30px;
-    right: 0px;
-    height: 727.5px;
-    animation: enterFromRight 1s ease-out 1s; /* 1s de retraso */
-  }
-  
-  #edificiosIzq{
-    position: absolute;
-    bottom: -25px;
-    left: -60px;
-    animation: enterFromLeft 1s ease-out 0.5s; /* 0.5s de retraso */
-  }
-  
-  #edificiosAtras{
-    position: absolute;
-    bottom: -9px;
-    left: 50%;
-    transform: translate(-50%);
-  }
+
 
 
 .contenedorSpideyRojo{
@@ -51,6 +60,8 @@
   z-index: 5;
   top: 383px;
   left: -19%;
+  animation: enterFromLeft 1s ease-out 0.5s; /* 0.5s de retraso */
+  opacity: 0;
 }
 
 #spiderRojo {
@@ -72,6 +83,8 @@
   z-index: 4;
   top: 390px;
   left: 5%;
+  animation: enterFromLeft 1s ease-out 0.5s; /* 0.5s de retraso */
+  opacity: 0;
 }
 
 .contenedorSpideyNegro{
@@ -83,6 +96,8 @@
   top: 334px;
   right: 0;
   overflow: hidden;
+  animation: enterFromRight 1s ease-out 0.5s; /* 0.5s de retraso */
+  opacity: 0;
 }
 
 #spiderNegro {
@@ -152,7 +167,7 @@
 } 
 
 
-.entrarDesdeLado {
+/* .entrarDesdeLado {
   opacity: 0;
   transform: translateX(-100px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -161,4 +176,40 @@
 .entrarDesdeLado-entra {  
   opacity: 1;
   transform: translateX(0);
+} */
+
+@keyframes enterFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
+
+@keyframes enterFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes enterFromBottom {
+  from {
+    transform: translate(-50%,100%);
+    opacity: 0;
+  }
+  to {
+    transform:  translate(-50%,0%);
+    opacity: 1;
+  }
+}
+
+

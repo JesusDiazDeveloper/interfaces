@@ -38,15 +38,12 @@ document.addEventListener('scroll', function () {
 
   console.log(scrollPosition * 0.1);
 
-  if (scrollPosition < 400) {
+  if (scrollPosition < 600) {
     spiderRojoContainer.style.transform = `translate(${-scrollPosition * 0.2}px, ${-scrollPosition * 0.5}px )`;
     spiderNegroContainer.style.transform = `translate(${scrollPosition * 0.2}px, ${-scrollPosition * 0.5}px )`;
     spiderLila.style.transform = `translate(${-scrollPosition * 0.2}px, ${-scrollPosition * 0.5}px )`;
   }
-  else {
-    // spiderRojo.style.top = scrollPosition * 0.1 + 'px';
-    // sogaIzq.style.top = scrollPosition * 0.1 + 'px';
-  }
+
 }
 );
 
@@ -56,14 +53,15 @@ document.addEventListener('scroll', function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Obtén el elemento que deseas animar
-  // const edificioIzq = document.getElementById("edificiosIzq");
-
-  // Define una función para agregar la clase de animación
-
-
-  // Agrega la clase de animación al edificio izquierdo
-  aparecerDesdeElCostado(edificiosIzq, "entrarDesdeLado", 2000);
+  
+  setTimeout(function (){
+    edificiosIzq.style.opacity=1;
+    edificiosDer.style.opacity=1;
+    edificiosAtras.style.opacity=1;
+    spiderNegroContainer.style.opacity=1;
+    spiderRojoContainer.style.opacity=1;
+    spiderLila.style.opacity=1;
+  }, 1000)
 
 });
 
