@@ -1,0 +1,173 @@
+
+.parallax9{
+    position: relative;
+    height: 1296px;
+    background-color: aqua;
+    background-image: linear-gradient(180deg, #F7E3D8 21.2%, #8FBEFC 81.48%);
+}
+
+.contenedorElementosP9 p {
+    width: 578px;
+    height: 95px;
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.9px;
+}
+.contenedorElementosP9 p span{
+    text-decoration: underline;
+}
+
+.contenedorElementosP9 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    height: 1296px;
+}
+
+.contenedorElementosP9 .imageTeen {
+    width: 231px;
+    height: 145px;
+    left: 0px;
+}
+
+.edificios {
+    position: absolute;
+    width: 100%;
+    height: 720px;
+    bottom: 0px;
+}
+
+.buttonsP9{
+    height: 100px;
+    width: 780px;
+    margin-bottom: 39px;
+    display: flex;
+}
+
+.placeholder {
+    width: 562px;
+    height: 100px;
+    border-radius: 50px 0px 0px 50px;
+    border-top: 9px solid #2982FF;
+    border-bottom: 9px solid #2982FF;
+    border-left: 9px solid #2982FF;
+    padding-left : 30px ;
+    background: #FFF;
+    color: #999;
+    font-size: 25px;
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px 0px #02187E;
+    box-sizing: border-box;
+}
+
+.subs {
+    width: 218px;
+    height: 100px;
+    border-radius: 0px 50px 50px 0px;
+    border: 9px solid #2982FF;
+    background: #FFE901;
+
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px 0px #02187E;
+    color: #02187E;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 18.9px;
+    letter-spacing: 2.2px;
+    
+}
+
+.h1P9 {
+    margin-top: 152px;
+    width: 816px;
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56.7px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/* spriteSheet Spider */
+.spriteP9SpiderNegro{
+    position: absolute;
+    left: 6%;
+    bottom: 28%;
+   
+    width:110px;/*ancho personaje individual */
+    height: 155px; /*altura personaje individual*/
+    background-image:url('../assets/images/spritesheetSpiderNegro.png');
+    background-size: cover;
+    animation: animationSriteNegro 1s steps(9) infinite;
+
+}
+
+@keyframes animationSriteNegro { 
+	0% { background-position: 0px; }
+     100% { background-position: -1110px; }
+ } 
+
+ .spriteP9SpiderRojo{
+    position: absolute;
+    right: 12%;
+    bottom: 18%;
+    width:192px;/*ancho personaje individual */
+    height: 160px; /*altura personaje individual*/
+    background-image:url('../assets/images/spritesheetSpiderRojoSolo.png');
+    background-size: cover;
+    animation: animationSriteRojo 1s steps(6) infinite;
+ }
+ .spriteP9SpiderRojo:hover {
+    background-image: url('../assets/images/spriteHoverSpiderRojo.png');
+    cursor: pointer;
+    animation: animationSriteRojoHover 1s steps(6) infinite;
+  }
+
+
+ @keyframes animationSriteRojo { 
+	0% { background-position: 0px; }
+    100% { background-position: 1152px; }
+ } 
+ @keyframes animationSriteRojoHover { 
+	0% { background-position: 0px; }
+    100% { background-position: 1174px; }
+ } 
+
+ .spriteP9SpiderNegro2{
+    position: absolute;
+    left: 43%;
+    bottom: 12.5%;
+     width:90px;/*anch personaje individual */
+    height: 100px; /*altura personaje individual*/
+    background-image: url('../assets/images/spriteSpiderNegro2.png') ;
+    background-size: cover;
+    animation: animationSriteNegro2 1s steps(9) infinite;
+ }
+
+ .spriteP9SpiderNegro2:hover {
+    background-image: url('../assets/images/spriteHoverNegro1.png');
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+ @keyframes animationSriteNegro2 { 
+	0% { background-position: 0px; }
+    100% { background-position:850px;}
+}

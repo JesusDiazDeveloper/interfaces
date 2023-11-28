@@ -1,0 +1,39 @@
+.parallax8{
+    z-index:0;
+    height: 800px;
+    background-color: transparent;
+    position: relative;
+    background-image: url('../assets/images/FondoP8Blanco.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.fondoColores{
+    z-index:0;
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+
+.containerFocusChico{
+    display:block;
+    
+}
+
+.personajeFocusChico{
+    margin-top: 180px;
+    transition: scale 0.5s ease-in-out;
+
+}
+
+.difuminado{
+    filter: blur(5px);
+}
+
+.scale{
+    scale: 1.3;
+}

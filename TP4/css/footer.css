@@ -1,0 +1,48 @@
+footer {
+    width: 100%;
+    height: 678px;
+}
+
+/* rectangulo negro footer ps5 */
+.rectNegro {
+    height: 80px;
+    background: #242424;
+}
+
+.imgPs4Footer {
+    width: 1080px;
+    height: 75px;
+}
+
+/* Contendor Copyright */
+.contenedorCopyright {
+    height: 598px;
+    background: #5E5E5D;
+    padding-top: 38px;
+}
+
+/* img redes sociales */
+.contenedorCopyright .iconoRedes {
+    width: 212px;
+    height: 41px;
+    margin-top: 33px;
+    cursor: pointer;
+}
+
+.textoCopyright {
+    height: 361px;
+    width: 820px;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.9px;
+    letter-spacing: 2.2px;
+
+}
+
+.policy-line {
+    text-decoration-line: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+/* PARALLAX2 */
+.parallax2 {
+  position: relative;
+  height: 844.5px;
+}
+
+
+/* z-index: 201; */
+/* transform: skewY(-5deg); */
+.parallax2 img {
+  position: absolute;
+  z-index: 204;
+}
+
+.fondoVioleta{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: #8f6aa6;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  height: 944.5px;
+  top: -90px;
+}
+
+
+#personajeDuendeVerde {
+  transform: translate(630px, 80px);
+  z-index: 210;
+}
+
+#imagenGameplay {
+  transform: translate(-5px, 500px);
+  z-index: 209;
+}
+
+#contenedorTextoDuende {
+  position: absolute;
+  transform: translate(0px, 190px);
+  width: 600px;
+  z-index: 210;
+}
+
+.parallax2 h1 {
+  color: #FFF;
+  font-family: Lato;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56.7px;
+  width: 646px;
+  height: 114px;
+}
+
+#contenedorTextoDuende p {
+  color: #FFF;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 10px;
+  height: 154px;
+}
+
+
