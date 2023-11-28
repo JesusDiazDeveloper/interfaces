@@ -23,7 +23,7 @@ function cambiarAFocus(element) {
         personajeRojoP8.classList.remove("difuminado");
         personajeRojoP8.classList.add("scale");
         personajeRojoP8.style.backgroundSize = "auto 100%";
-        parallax8.style.backgroundImage = "url('assets/images/FondoP8Azul.png')";
+        parallax8.style.backgroundImage = "url('assets/images/fondoP8Azul.png')";
     }
     else if(element.dataset.name == "lila"){
         personajeRojoP8.classList.add("difuminado");
@@ -41,7 +41,7 @@ function cambiarAFocus(element) {
         personajeRojoP8.classList.remove("scale");
         personajeNegroP8.classList.remove("difuminado");
         personajeNegroP8.classList.add("scale");
-        parallax8.style.backgroundImage = "url('assets/images/FondoP8Negro.png')";
+        parallax8.style.backgroundImage = "url('assets/images/fondoP8Negro.png')";
     }
 }
 
