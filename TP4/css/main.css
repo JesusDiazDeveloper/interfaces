@@ -124,7 +124,7 @@ body{
       background-image: url("../assets/images/PantallaLoader.png");
       background-size: cover;
       display: block;
-      z-index: 11;
+      z-index: 1;
     }
   
     .loader {

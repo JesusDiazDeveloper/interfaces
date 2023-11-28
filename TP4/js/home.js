@@ -27,8 +27,11 @@ document.addEventListener('scroll', function () {
 
   if (scrollPosition > 20 && scrollPosition < 480) {
     edificiosIzq.style.top = (scrollPosition + 330) * 0.5 + 'px';
+    // edificiosIzq.style.scale = (scrollPosition + 330) * 0.5 + 'px';
+    edificiosIzq.style.scale = 1 + scrollPosition / 1000;
     edificiosAtras.style.bottom = (-scrollPosition - 0) * 0.3 + 'px';
     edificiosDer.style.top = (scrollPosition + 230) * 0.5 + 'px';
+    edificiosDer.style.scale = 1 + scrollPosition / 1000;
   }
 
   else {
@@ -53,7 +56,6 @@ document.addEventListener('scroll', function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  
   setTimeout(function (){
     edificiosIzq.style.opacity=1;
     edificiosDer.style.opacity=1;
@@ -99,46 +101,46 @@ const aranas = document.querySelectorAll('.aranaInicio');
 
 // Este es el que va, el otro luego de terminar la pagina, sacarlo
 
-// document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
 
-//   body.style.overflow = "hidden";
+  body.style.overflow = "hidden";
 
-//   loader.classList.add(mostrar);
+  loader.classList.add(mostrar);
 
-//   setTimeout(() => {
-//     body.style.overflow = "auto";
-//     loader.classList.remove(mostrar);
-//     loader.classList.add(ocultar);
-//     loader.style.display = "none";
-//     loaderContainer.style.display = "none";
-//     contenedorPaginaEntera.style.display = "block";
+  setTimeout(() => {
+    body.style.overflow = "auto";
+    loader.classList.remove(mostrar);
+    loader.classList.add(ocultar);
+    loader.style.display = "none";
+    loaderContainer.style.display = "none";
+    contenedorPaginaEntera.style.display = "block";
 
-//     // Oculta cada araña
-//     aranas.forEach(arana => {
-//       arana.style.display = "none";
-//     });
-//   }, 5000);
-// });
+    // Oculta cada araña
+    aranas.forEach(arana => {
+      arana.style.display = "none";
+    });
+  }, 5000);
+});
 
 
 
 
 // Sacar!!!!!!!
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
 
-  body.style.overflow = "auto";
-  loader.classList.remove(mostrar);
-  loader.classList.add(ocultar);
-  loader.style.display = "none";
-  loaderContainer.style.display = "none";
-  // contenedorLogoHeader.style.display = "flex";
-  contenedorPaginaEntera.style.display = "block";
+//   body.style.overflow = "auto";
+//   loader.classList.remove(mostrar);
+//   loader.classList.add(ocultar);
+//   loader.style.display = "none";
+//   loaderContainer.style.display = "none";
+//   // contenedorLogoHeader.style.display = "flex";
+//   contenedorPaginaEntera.style.display = "block";
 
-  // Oculta cada araña
-  aranas.forEach(arana => {
-    arana.style.display = "none";
-  });
-});
+//   // Oculta cada araña
+//   aranas.forEach(arana => {
+//     arana.style.display = "none";
+//   });
+// });
 
 
 

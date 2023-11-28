@@ -2,9 +2,12 @@
 
 .parallax1{
   width: 100%;
-  background-color: aqua;
   height: 823px;
   position: relative;
+}
+
+.hiddenX{
+  overflow: hidden;
 }
 
 
