@@ -1,5 +1,4 @@
-
-.parallax9{
+.parallax9 {
     position: relative;
     height: 1296px;
     background-color: aqua;
@@ -16,7 +15,8 @@
     font-weight: 400;
     line-height: 18.9px;
 }
-.contenedorElementosP9 p span{
+
+.contenedorElementosP9 p span {
     text-decoration: underline;
 }
 
@@ -41,7 +41,7 @@
     bottom: 0px;
 }
 
-.buttonsP9{
+.buttonsP9 {
     height: 100px;
     width: 780px;
     margin-bottom: 39px;
@@ -55,7 +55,7 @@
     border-top: 9px solid #2982FF;
     border-bottom: 9px solid #2982FF;
     border-left: 9px solid #2982FF;
-    padding-left : 30px ;
+    padding-left: 30px;
     background: #FFF;
     color: #999;
     font-size: 25px;
@@ -80,7 +80,7 @@
     font-weight: 900;
     line-height: 18.9px;
     letter-spacing: 2.2px;
-    
+
 }
 
 .h1P9 {
@@ -106,68 +106,116 @@
 
 
 /* spriteSheet Spider */
-.spriteP9SpiderNegro{
+.spriteP9SpiderNegro {
     position: absolute;
     left: 6%;
     bottom: 28%;
-   
-    width:110px;/*ancho personaje individual */
-    height: 155px; /*altura personaje individual*/
-    background-image:url('../assets/images/spritesheetSpiderNegro.png');
+
+    width: 110px;
+    /*ancho personaje individual */
+    height: 155px;
+    /*altura personaje individual*/
+    background-image: url('../assets/images/spritesheetSpiderNegro.png');
     background-size: cover;
-    animation: animationSriteNegro 1s steps(9) infinite;
+    animation: animationSriteNegro 1.4s steps(9) infinite;
 
 }
 
-@keyframes animationSriteNegro { 
-	0% { background-position: 0px; }
-     100% { background-position: -1110px; }
- } 
 
- .spriteP9SpiderRojo{
+.spriteP9SpiderNegro:hover {
+    background-image: url('../assets/images/Sprite999.png');
+    cursor: pointer;
+    width: 151px;
+    animation: animationSriteNegroHover 2s steps(11) infinite;
+}
+
+@keyframes animationSriteNegro {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: -1110px;
+    }
+}
+
+@keyframes animationSriteNegroHover {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 1661px;
+    }
+}
+
+
+
+.spriteP9SpiderRojo {
     position: absolute;
     right: 12%;
     bottom: 18%;
-    width:192px;/*ancho personaje individual */
-    height: 160px; /*altura personaje individual*/
-    background-image:url('../assets/images/spritesheetSpiderRojoSolo.png');
+    width: 192px;
+    /*ancho personaje individual */
+    height: 160px;
+    /*altura personaje individual*/
+    background-image: url('../assets/images/spritesheetSpiderRojoSolo.png');
     background-size: cover;
     animation: animationSriteRojo 1s steps(6) infinite;
- }
- .spriteP9SpiderRojo:hover {
+}
+
+.spriteP9SpiderRojo:hover {
     background-image: url('../assets/images/spriteHoverSpiderRojo.png');
     cursor: pointer;
     animation: animationSriteRojoHover 1s steps(6) infinite;
-  }
+}
 
 
- @keyframes animationSriteRojo { 
-	0% { background-position: 0px; }
-    100% { background-position: 1152px; }
- } 
- @keyframes animationSriteRojoHover { 
-	0% { background-position: 0px; }
-    100% { background-position: 1174px; }
- } 
+@keyframes animationSriteRojo {
+    0% {
+        background-position: 0px;
+    }
 
- .spriteP9SpiderNegro2{
+    100% {
+        background-position: 1152px;
+    }
+}
+
+@keyframes animationSriteRojoHover {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 1174px;
+    }
+}
+
+.spriteP9SpiderNegro2 {
     position: absolute;
     left: 43%;
     bottom: 12.5%;
-     width:90px;/*anch personaje individual */
-    height: 100px; /*altura personaje individual*/
-    background-image: url('../assets/images/spriteSpiderNegro2.png') ;
+    width: 90px;
+    /*anch personaje individual */
+    height: 100px;
+    /*altura personaje individual*/
+    background-image: url('../assets/images/spriteSpiderNegro2.png');
     background-size: cover;
     animation: animationSriteNegro2 1s steps(9) infinite;
- }
+}
 
- .spriteP9SpiderNegro2:hover {
+.spriteP9SpiderNegro2:hover {
     background-image: url('../assets/images/spriteHoverNegro1.png');
     transform: scale(1.2);
     cursor: pointer;
-  }
+}
 
- @keyframes animationSriteNegro2 { 
-	0% { background-position: 0px; }
-    100% { background-position:850px;}
+@keyframes animationSriteNegro2 {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 850px;
+    }
 }
