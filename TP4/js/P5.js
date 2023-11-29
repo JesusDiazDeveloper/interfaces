@@ -39,21 +39,3 @@ document.addEventListener("mousemove", function (e) {
     }
 });
 
-
-
-
-
-// document.addEventListener("hover", function(event) {
-
-//     // Obtener las coordenadas del mouse
-//     var mouseX = event.clientX;
-//     var mouseY = event.clientY;
-
-//     // Mover el elemento solo unos pocos píxeles
-//     var offsetX = 5;
-//     var offsetY = 5;
-
-//     // Actualizar la posición del elemento
-//     personajeNegro.style.left = mouseX - offsetX + "px";
-//     personajeNegro.style.top = mouseY - offsetY + "px";
-// });

@@ -53,4 +53,3 @@ function quitarAFocus(){
         spider.classList.remove("difuminado");
     })
 }
-console.log("AndaP8");

@@ -25,8 +25,6 @@ document.addEventListener('scroll', function () {
     edificiosDer.style.scale = 1 + scrollPosition / 1000;
   }
 
-  console.log(scrollPosition * 0.1);
-
   // Mueve los personajes de la parte inicial
   if (scrollPosition < 600) {
     spiderRojoContainer.style.transform = `translate(${-scrollPosition * 0.2}px, ${-scrollPosition * 0.5}px )`;
@@ -41,33 +39,21 @@ document.addEventListener('scroll', function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function (){
-    // cieloP1.style.transform = "scaleY(1.3)";
     edificiosIzq.style.opacity=1;
     edificiosDer.style.opacity=1;
     edificiosAtras.style.opacity=1;
     spiderNegroContainer.style.opacity=1;
     spiderRojoContainer.style.opacity=1;
     spiderLila.style.opacity=1;
-  }, 1000)
+
+
+
+    
+
+
+  }, 6000)
 
 });
-
-function aparecerDesdeElCostado(elemento, clase, tiempo) {
-  setTimeout(function () { elemento.classList.add(clase);
-    elemento.classList.add(clase + "-entra");
-    console.log("entro aca");
-
-  }, Math.random() * tiempo);
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -84,47 +70,43 @@ const contenedorLogoHeader = document.querySelector(".contenedorLogoHeader");
 const aranas = document.querySelectorAll('.aranaInicio');
 
 
-// Este es el que va, el otro luego de terminar la pagina, sacarlo
-
-// document.addEventListener('DOMContentLoaded', function () {
-
-//   body.style.overflow = "hidden";
-
-//   loader.classList.add(mostrar);
-
-//   setTimeout(() => {
-//     body.style.overflow = "auto";
-//     loader.classList.remove(mostrar);
-//     loader.classList.add(ocultar);
-//     loader.style.display = "none";
-//     loaderContainer.style.display = "none";
-//     contenedorPaginaEntera.style.display = "block";
-
-//     // Oculta cada araña
-//     aranas.forEach(arana => {
-//       arana.style.display = "none";
-//     });
-//   }, 5000);
-// });
-
-
-
-
-// Sacar!!!!!!!
+// Loader + pantalla inicial
 document.addEventListener('DOMContentLoaded', function () {
 
-  body.style.overflow = "auto";
-  loader.classList.remove(mostrar);
-  loader.classList.add(ocultar);
-  loader.style.display = "none";
-  loaderContainer.style.display = "none";
-  contenedorPaginaEntera.style.display = "block";
+  body.style.overflow = "hidden";
 
-  // Oculta cada araña
-  aranas.forEach(arana => {
-    arana.style.display = "none";
-  });
+  loader.classList.add(mostrar);
+
+  setTimeout(() => {
+    body.style.overflow = "auto";
+    loader.classList.remove(mostrar);
+    loader.classList.add(ocultar);
+    loader.style.display = "none";
+    loaderContainer.style.display = "none";
+    contenedorPaginaEntera.style.display = "block";
+
+    // Oculta cada araña
+    aranas.forEach(arana => {
+      arana.style.display = "none";
+    });
+  }, 5000);
 });
+
+// Para trabajar
+// document.addEventListener('DOMContentLoaded', function () {
+
+//   body.style.overflow = "auto";
+//   loader.classList.remove(mostrar);
+//   loader.classList.add(ocultar);
+//   loader.style.display = "none";
+//   loaderContainer.style.display = "none";
+//   contenedorPaginaEntera.style.display = "block";
+
+//   // Oculta cada araña
+//   aranas.forEach(arana => {
+//     arana.style.display = "none";
+//   });
+// });
 
 
 
