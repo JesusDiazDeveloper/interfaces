@@ -2,11 +2,11 @@
 
 For see all projects, please, press on the links bellow 
 
-##Figma Project: 
+## Figma Project: 
 https://jesusdiazdeveloper.github.io/interfaces/TP2/
 
-##Html, Css and Javascript Project: 
+## Html, Css and Javascript Project: 
 https://jesusdiazdeveloper.github.io/interfaces/TP3/
 
-##Parallax Project: 
+## Parallax Project: 
 https://jesusdiazdeveloper.github.io/interfaces/TP4/
