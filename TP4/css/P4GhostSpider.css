@@ -1,0 +1,64 @@
+
+/* PARALLAX 4 "Ghost.."*/
+.parallax4{
+    position: relative;
+    height: 566px;
+    z-index: 400;
+    background-image: url("../assets/images/rectanguloGhost.png");
+    background-repeat: no-repeat;
+    background-size: 100% 98% ;
+    top: 0;
+  }
+
+  .contenedorImagenesParallax4{
+    width: 1080px;
+    height: 100%;
+    flex-direction: column;
+    align-self: start;
+    display: flex;
+    margin: auto;
+    z-index: 401;
+  }
+
+  .P4Cards {
+    width: 546.11px;
+    height: 326.51px;
+    position: absolute;
+    transition: transform 0.4s ease-in ,scale 0.4s ease-in;
+    cursor: pointer;
+    filter: drop-shadow(10px 10px 30px rgba(0,0,0,1) );
+  }
+
+  .P4Cards:hover{
+    scale: 1.2;
+  }
+
+  /* (X , Y) */
+  .P4card1{
+    transform: translate(0px, -100px);
+    position: absolute;
+    z-index: 402;
+  }
+  .P4card2{
+    transform: translate(0px, 30px);
+    position: absolute;
+    z-index: 403;
+  }
+  .P4card3{
+    transform: translate(0px,200px) rotate(-10deg); 
+    position: absolute;
+    z-index: 404;
+  }
+
+  .P4card1:hover{
+    transform: translate(-50px, -100px);
+  }
+
+  .P4card2:hover{
+    transform: translate(-50px, 30px);
+  }  
+
+  .P4card3:hover{
+    transform: translate(-50px,200px);
+  }
+  

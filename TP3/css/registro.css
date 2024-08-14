@@ -1,0 +1,275 @@
+@import url("styles.css");
+/* Seccion Main */
+@media screen {
+
+  body .main-container {
+    display: grid;
+    width: 100%;
+    background-color: var(--negro-background-registro);
+    grid-template-areas:
+      "divisor divisor"
+      "  logo tipos-de-login ";
+    grid-template-rows: 18px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body .main-container .divisor {
+    background-image: var(--gradiente-horizontal);
+    height: 18px;
+    grid-area: divisor;
+  }
+}
+
+/* seccion logo */
+@media screen {
+  body .main-container .logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body .main-container .logo img:first-child {
+    margin-top: 100px;
+    filter: drop-shadow(var(--sombra1));
+    width: 40%;
+  }
+
+  body .main-container .logo img:nth-child(2) {
+    width: 40%;
+    filter: drop-shadow(var(--sombra1));
+  }
+
+  body .main-container .tipos-de-login {
+    grid-area: tipos-de-login;
+    display: flex;
+  }
+}
+
+/* seccion tipos-de-login  */
+@media screen {
+
+  body .main-container .tipos-de-login {
+    display: flex;
+    flex-direction: column;
+    color: var(--primario);
+  }
+
+  body .main-container .tipos-de-login button , .boton-registrarse-enviar ,  .boton-inicio-sesion-enviar , .boton-exito-al-home{
+    width: 202px;
+    height: 40px;
+    border-radius: 100px;
+  }
+
+  body .main-container .tipos-de-login h1:first-child {
+
+    margin-top: 87px;
+    max-width: 410px;
+  }
+
+  body .main-container .tipos-de-login h2:first-of-type {
+    margin-top: 37px;
+    color: var(--primario-l1);
+  }
+
+  body .main-container .tipos-de-login button:first-of-type {
+    margin-top: 37px;
+  }
+
+  body .main-container .tipos-de-login button:nth-of-type(2) {
+    margin-top: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body .main-container .tipos-de-login button.boton-facebook img {
+    width: 21px;
+    height: 21px;
+  }
+
+  body .main-container .tipos-de-login h2:nth-of-type(2) {
+    margin-top: 24px;
+  }
+
+  body .main-container .tipos-de-login button:nth-of-type(3) {
+    margin-top: 24px;
+  }
+
+  body .main-container .tipos-de-login p.politica-de-privacidad {
+    margin-top: 11px;
+    font: var(--texto-chico);
+    color: var(--blanco);
+    max-width: 450px;
+  }
+
+  body .main-container .tipos-de-login p.politica-de-privacidad span {
+    color: var(--primario-l1);
+  }
+
+  body .main-container .tipos-de-login h2:last-of-type {
+    margin-top: 60px;
+  }
+
+  body .main-container .tipos-de-login button:last-of-type {
+    margin-top: 14px;
+    margin-bottom: 100px;
+  }
+}
+
+/* Seccion formulario de registro  */
+@media screen {
+
+  /* Estilo para el overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(217, 217, 217, 0.70);
+    z-index: 9;
+  }
+
+  /* Estilo para el formulario */
+  .formulario-contenedor {
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--primario);
+    
+    /* Border Gradient Personalizada  */
+    background: linear-gradient( var(--negro-n1), var(--negro-n1)) padding-box, 
+    linear-gradient( 120deg, var(--primario),var(--secundario)) border-box;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 3em;
+    box-shadow: 0 0 20px var(--primario);
+  }
+
+  .boton-cerrar-container {
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+  }
+
+  .formulario-contenedor button.boton-cerrar {
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 41px;
+    right: 37px;
+    cursor: pointer;
+
+  }
+
+  .formulario-contenedor img.logo {
+    margin-top: 26px;
+    width: 127px;
+    height: 134px;
+  }
+  /* //un comentario */
+  .formulario-contenedor form{
+    width: 285px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 54px 0;
+    color: var(--blanco);
+  }
+  
+  .formulario-contenedor form p:first-of-type , .formulario-contenedor form span {
+    color: var(--error-letra);
+  }
+  
+  .formulario-contenedor form label{
+    margin-top: 19px;
+    margin-bottom: 3px;
+  }
+  
+  .formulario-contenedor form input{
+    border-radius: 20px;
+    height: 37px;
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .formulario-contenedor .fecha-de-nacimiento{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 29px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .formulario-contenedor .fecha-de-nacimiento select{
+    margin-right: 15px;
+    flex: 1;
+    border: 2px solid grey;
+    border-radius: 4px;
+  }
+
+  .formulario-contenedor div.reCAPTCHA{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--blanco);
+    color: black;
+    margin: 62px auto;
+    width: fit-content;
+    height: 60px;
+    border-radius: 5px;
+  }
+
+  .formulario-contenedor div.reCAPTCHA input {
+    width: 23px;
+    margin: auto 18px auto 10px;
+  }
+  .formulario-contenedor div.reCAPTCHA p{
+    color: black;
+    font: var(--texto-chico);
+    margin-right: 10px;
+  }
+  .formulario-contenedor div.reCAPTCHA img{
+    width: 57px;
+    height: 49px;
+  }
+  .formulario-contenedor .boton-registrarse-enviar{
+    margin: auto;
+  }
+  
+  .formulario-contenedor .form-iniciar-sesion .boton-inicio-sesion-enviar {
+    margin: 30px auto;
+
+  }
+
+  
+  
+
+}
+
+
+.mensaje-registro-con-exito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mensaje-registro-con-exito h2 {
+  margin-bottom: 40px;
+  color: var(--primario);
+  margin-top: 20px;
+}
+
+.mensaje-registro-con-exito .boton-exito-al-home {
+  margin-bottom: 50px;
+}

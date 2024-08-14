@@ -1,0 +1,211 @@
+/* Section 1 */
+
+.parallax1{
+  width: 100%;
+  height: 823px;
+  position: relative;
+}
+
+.hiddenX{
+  overflow: hidden;
+}
+
+
+/* Edificios y cielo */
+@media screen {
+  
+  #cieloP1{
+    width: 100%;
+    display: flex;
+    transform: scale(1.3);
+    height: 823px;
+    background: url("../assets/images/fondoNubesP1.png");
+    animation: animationNubesP1 40s linear infinite;
+  }
+
+  @keyframes animationNubesP1 {
+    0% { background-position: 0px; }
+    100% { background-position: 2422px;}
+  }
+
+}
+
+
+#edificiosDer{
+  position: absolute;
+  bottom: -30px;
+  right: 0px;
+  height: 727.5px;
+  opacity: 0;
+  animation: enterFromRight 1s ease-out 0.2s; /* 1s de retraso */
+}
+
+#edificiosIzq{
+  position: absolute;
+  bottom: -25px;
+  left: -60px;
+  opacity: 0;
+  animation: enterFromLeft 1s ease-out 0.5s; /* 0.5s de retraso */
+}
+
+#edificiosAtras{
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%);
+  animation: enterFromBottom 1s ease-out 0.5s; /* 0.5s de retraso */
+}
+  
+
+
+
+.contenedorSpideyRojo{
+  width:1000px;
+  height: 200px;
+  position: absolute;
+  z-index: 5;
+  top: 383px;
+  left: -19%;
+  animation: enterFromLeft 1s ease-out 0.5s; /* 0.5s de retraso */
+  opacity: 0;
+}
+
+#spiderRojo {
+  position: absolute;
+  top: 20px;
+  left: 640px;
+}
+
+#sogaIzq {
+  left: -150px;
+  top: 0;
+  transform:  scaleX(1.55);
+  z-index: 6;
+  position: absolute;
+}
+
+#spiderLila {
+  position: absolute;
+  z-index: 4;
+  top: 390px;
+  left: 5%;
+  animation: enterFromLeft 1s ease-out 0.5s; /* 0.5s de retraso */
+  opacity: 0;
+}
+
+.contenedorSpideyNegro{
+  /* width:650px; */
+  width:1000px;
+  height: 400px;
+  position: absolute;
+  z-index: 3;
+  top: 334px;
+  right: 0;
+  overflow: hidden;
+  animation: enterFromRight 1s ease-out 0.5s; /* 0.5s de retraso */
+  opacity: 0;
+}
+
+#spiderNegro {
+  top: 0;
+  right: 195px;
+  position: absolute;
+  z-index: 101;
+  height: 393px;
+  width: 393px;
+}
+
+#sogaDer {
+  right: -145px;
+  position: absolute;
+  top: 60px;
+  z-index: 102;
+  /* transform:  scaleX(1.55); */
+} 
+
+
+
+
+
+
+
+@media screen and (max-width: 1261px) {
+
+  .contenedorSpideyRojo{
+    /* background-color: blue; */
+    left: -30%;
+  }
+} 
+
+
+@media screen and (min-width: 1380px) {
+
+  .contenedorSpideyRojo{
+    /* background-color: blue; */
+    left: -15%;
+  }
+} 
+@media screen and (min-width: 1480px) {
+
+  .contenedorSpideyRojo{
+    /* background-color: blue; */
+    left: -5%;
+  }
+} 
+@media screen and (min-width: 1780px) {
+
+  .contenedorSpideyRojo{
+    /* background-color: blue; */
+    left: 10%;
+  }
+
+  
+#sogaIzq {
+  left: -230px;
+  /* left: 0px; */
+  top: 0;
+  transform:  scaleX(1.75);
+  z-index: 999;
+  position: absolute;
+}
+
+
+} 
+
+
+@keyframes enterFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes enterFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes enterFromBottom {
+  from {
+    transform: translate(-50%,100%);
+    opacity: 0;
+  }
+  to {
+    transform:  translate(-50%,0%);
+    opacity: 1;
+  }
+}
+
+

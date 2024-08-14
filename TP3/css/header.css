@@ -1,0 +1,351 @@
+@import url('styles.css');
+
+header {
+  width: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between; 
+  height: fit-content;
+  /* background-color: var(--negro-n1); */
+  background-color: rgb(229, 105, 105);
+  position: relative;
+}
+
+.input-buscar{
+  display: none;
+}
+
+
+
+    header {
+        width: 100%;
+        display: flex; 
+        align-items: center;
+        justify-content: space-between; 
+        height: 100px;
+        background-color: var(--negro-n1);
+        position: relative;
+      }
+
+
+      /*  nav Icon menu hamburguesa */
+    #nav-icon1 {
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      position: relative;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      cursor: pointer;
+    }
+
+    #nav-icon1 span {
+      display: block;
+      position: absolute;
+      height: 7px;
+      width: 100%;
+      background: var(--primario, #FFFF1A);
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+    }
+
+    #nav-icon1 span:nth-child(1) {
+      top: 0px;
+    }
+
+    #nav-icon1 span:nth-child(2) {
+      top: 18px;
+    }
+
+    #nav-icon1 span:nth-child(3) {
+      top: 36px;
+    }
+
+    #nav-icon1.open span:nth-child(1) {
+      top: 18px;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+
+    #nav-icon1.open span:nth-child(2) {
+      opacity: 0;
+      left: -60px;
+    }
+
+    #nav-icon1.open span:nth-child(3) {
+      top: 18px;
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
+
+
+    header .contenedor-menu-y-logo{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: fit-content;
+      /* width: 390px; */
+    }
+    header .logo{
+      /* display:flex; */
+      display:none;
+      flex-direction: column;
+      align-items:center;
+      cursor: pointer;
+      margin: 5px;
+    }
+    header .logoParaMobile{
+      display: flex; 
+      flex-direction: column;
+      align-items:center;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    /* Logo Principal */
+    header .logo-prin{
+    display: flex;
+    width: 82px;
+    height: 60px;
+    cursor: pointer;
+
+    }
+
+    /* super juegos! */
+    .super-juegos{
+      display: flex;
+      bottom: 0%;
+    }
+    /* container usuario  */
+      header .usuario-logueado-container{
+        display: flex;
+        justify-content: flex-start;
+        padding-right: 20px;
+        cursor: pointer;
+        height: 50px;
+          }
+       /* Carrito */
+    header .usuario-logueado-container .carrito{
+      display: none;
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+    }
+    
+      /* Logo Usuario Logueado */
+    header  .usuario-logueado{
+        display: flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        
+      }
+      
+    /* Pepe123 */
+   .usuario-logueado p{
+      font-size: medium;
+      font: var(--texto-body);
+      color: var(--blanco);
+    }
+    
+    /* Divisor full Desktop */
+    .divisor{
+    width: 100%;
+    height: 4px;
+    background-image: var(--gradiente-horizontal);
+    justify-content: end;
+    }
+  
+      /* Estilos para el contenedor del Menú hamb*/
+    .cont-menu {
+      background-color: var( --negro-n1);
+      filter:drop-shadow(var(--sombra1));
+      position: absolute;
+      top: 105px;
+      left: -200px;
+      z-index: 2;
+      opacity: 0;  
+      transition:all 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+    /* Estilos por agregar cuando se activa menu hamburguesa */
+    .active{
+      transform: translateX(200px);
+      opacity: 1;
+    }
+ 
+    /* Estilos para el listado del Menú */
+    .cont-menu ul{
+      list-style: none;    
+    }
+
+    .cont-menu ul li{
+      background-color: var( --negro-n1); 
+      color: var(--Primario, #FFFF1A);
+      display: flex;
+      text-decoration: none;
+      padding: 5px 5px;
+      cursor: pointer;
+      font: var(--texto-botones);
+      text-transform: uppercase ;
+      letter-spacing: 2.1px; 
+      border-bottom: 2px solid #333;
+    }
+
+
+    .texto-menu{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .cont-menu ul li .icono-menu{
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+    }
+    .texto-menu img {
+      height: 30px;
+    }
+
+    .cont-menu ul li:hover{
+      background-color: var(--secundario, #ed0080);
+      color:var(--primario-s1, #e6e617);
+    }
+    
+    .contenedor-principal-menu-usuario{
+      position: relative;
+    }
+    /* menu user */
+    .cont-menu-user {
+      filter:drop-shadow(var(--sombra1));
+      top: 158%;
+      bottom: 0%;
+      right: 0%;
+      transition:all 0.5s ease-in-out, transform 0.5s ease-in-out;
+      position: absolute;
+      z-index: 2;    
+      opacity: 0;
+      right: -250px; 
+    }
+    .active-user {
+      opacity: 1;
+      transform: translateX(-250px);
+      }
+    
+    .cont-menu-user ul li , .usuario-logueado-menu{
+      background-color: var( --negro-n1); 
+      color: var(--Primario, #FFFF1A);
+      display: flex;
+      text-decoration: none;
+      padding: 10px 10px;
+      cursor: pointer;
+      font:var(--texto-body);
+      border-bottom: 2px solid #333;
+      width: 220px;
+      
+    }
+    .cont-menu-user ul li:not(:last-child) {
+      border-bottom: 2px solid #333; /* Línea divisoria que no aparezca al final del menu */
+    }
+    .cont-menu-user ul li:hover{
+      background-color: var(--secundario, #ed0080);
+      color:var(--primario-s1, #e6e617);
+    }
+
+
+
+    .cont-menu-user ul li .icono-menu-user{
+      width: 45px;
+      height: 45px;
+      padding: 10px;
+    }
+    .cont-menu-user .nombre-usuario{
+      color: var(--acento);
+      font: var(--texto-body);
+    }
+    .cont-menu-user .detalles-usuario p{
+      font: var(--texto-body);
+      color: grey;
+      display: flex;
+      align-items: center;
+    }
+
+
+ /* input buscar */
+
+
+
+.input-buscar::placeholder {
+  color: rgb(158, 158, 158); 
+  font: var(--texto-body);
+}
+#sugerencias{
+  overflow-y: scroll;
+}
+
+@media screen and ( min-width: 992px) {
+  header .contenedor-menu-y-logo{
+    width: fit-content;
+    justify-content: center;
+  }
+
+
+  .usuario-logueado-container{
+    padding-right: 40px;
+  }
+
+  header .logoParaMobile{
+    display: none; 
+  }
+  header .logo{
+    display: flex; 
+  }
+
+  .input-buscar {
+    background-color: transparent;
+    border: 2px solid yellow;
+    height: 27px;
+    width: 350px;
+    border-radius: 10px;
+    outline: none; 
+    padding: 10px;
+    display: flex;
+    color: white;
+  }
+  header .usuario-logueado-container .carrito{
+    display: flex;
+  }
+
+  .cont-menu ul li.icono-menu-buscar-juego{
+    display: none;
+  }
+
+  /* Uso el id porque es mas especifico que la clase, si le pongo clase, compite
+  con la otra clase, y necesito que esto pise a lo anterior */
+  .cont-menu-user ul li#menu-user-mobile-carrito{
+    display: none;  
+  }
+
+  
+}

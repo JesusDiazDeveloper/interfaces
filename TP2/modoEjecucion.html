@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Juegos Entregable 2</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/modoEjecucion.css" />
+    <link rel="stylesheet" href="css/header.css" />
+
+</head>
+
+<body>
+    <header>
+        <!-- menu hamburguesa desplegagle -->
+
+        <div class="contenedor-menu-y-logo">
+            <div id="nav-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo" >
+                <img class="logo-prin" src="assets/img/logo.svg" alt="logo super juegos">
+                <img src="assets/img/texto-logo.svg" class="super-juegos" alt="super juegos">
+            </div>
+        </div>
+        <div class="cont-menu" id="menu">
+            <ul>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-inicio.svg" class="icono-menu"> Inicio </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-nuevos.svg" class="icono-menu"> Nuevos </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-tendencias.svg" class="icono-menu"> Tendencias
+                </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-accion.svg" class="icono-menu"> Accion </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-carrera.svg" class="icono-menu"> Carrera </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-clasicos.svg" class="icono-menu"> Clásicos
+                </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-deporte.svg" class="icono-menu"> Deportes
+                </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-estrategia.svg" class="icono-menu"> Estrategia
+                </li>
+                <li class="texto-menu"> <img src="assets/img/iconos/icono-infantiles.svg" class="icono-menu"> Infantiles
+                </li>
+            </ul>
+        </div>
+
+        <!-- resto header -->
+
+        <input type="text" class="input-buscar" list="sugerencias" placeholder="Buscar juego...">
+        <datalist id="sugerencias">
+            <option value="Cuatro en linea Tomy vs Daly">
+            <option value="Fireboy and Watergirl">
+            <option value="Plants vs zombies">
+            <option value="Mario kart">
+            <option value="Mountain bike">
+            <option value="Mario 2.0">
+
+        </datalist>
+
+        <div class="contenedor-principal-menu-usuario">
+            <div class="usuario-logueado-container">
+                <div>
+                    <img src="assets/img/carrito.svg" class="carrito" alt="logo carrito">
+
+                </div>
+                <div class="usuario-logueado">
+                    <img src="assets/img/usuario-logueado.svg" alt="logo usuario logueado">
+                    <p>Pepe123</p>
+                </div>
+            </div>
+            <div class="cont-menu-user hide" id="menu-user">
+                <div class="usuario-logueado-menu">
+                    <img class="usuario-logueado" src="assets/img/usuario-logueado.svg" alt="logo usuario logueado">
+                    <div class="detalles-usuario">
+                        <a class="nombre-usuario"> Hola Pepe123!</a>
+                        <p>pepe123@gmail.com</p>
+                    </div>
+                    <div class="linea"></div>
+                </div>
+                <ul>
+                    <li class="texto-menu"> <img src="assets/img/iconos/icono-user.svg" class="icono-menu-user"> Mi
+                        cuenta </li>
+                    <li id="menu-user-mobile-carrito" class="texto-menu "> <img
+                            src="assets/img/iconos/icono-carrito.svg" class="icono-menu-user">Mis Compras </li>
+                    <li class="texto-menu"> <img src="assets/img/iconos/icono-estrella.svg" class="icono-menu-user">
+                        Mis juegos </li>
+                    <li class="texto-menu"> <img src="assets/img/iconos/icono-editar.svg" class="icono-menu-user">
+                        Editar cuenta </li>
+                    <li class="texto-menu"> <img src="assets/img/iconos/icono-ajustes.svg" class="icono-menu-user">
+                        Configuracion de cuenta </li>
+                    <li class="texto-menu"> <img src="assets/img/iconos/icono-salir.svg" class="icono-menu-user">
+                        Cerrar cuenta </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="divisor"></div>
+
+
+    <!-- Parte de arriba gris -->
+    <section class="info-juego-container">
+        <div class="juego-info">
+            <div class="header-main-info">
+                <img class="img-juego-miniatura" src="assets/img/img-juego.svg" alt="tomy vs daly cuatro en linea">
+                <div class="grupo-info-game">
+                    <h1 class="nombre-juego">Tomy Vs Daly cuatro en linea</h1>
+                    <h2 class="breadcrumb">Juegos > Recomendados <span>> Tomy Vs Daly cuatro en linea</span></h2>
+                    <p class="info-partidas">1.029.983 partidas</p>
+                </div>
+            </div>
+
+
+            <div class="opciones-juego-header-main-info">
+                <div class="estrellas-puntuacion">
+                    <img src="assets/img/estrella.svg" alt="estrella">
+                    <img src="assets/img/estrella.svg" alt="estrella">
+                    <img src="assets/img/estrella.svg" alt="estrella">
+                    <img src="assets/img/mediaEstrella.svg" alt="media estrella">
+                    <img src="assets/img/estrellaVacia.svg" alt="estrella vacia">
+                </div>
+                <div class="votos">
+                    <img class="voto-positivo" src="assets/img/icono-voto-positivo.svg" alt="icono voto positivo">
+                    <p class="cant-total-votos">1.500 votos </p>
+                    <img class="voto-negativo" src="assets/img/icono-voto-negativo.svg" alt="icono voto negativo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- parte del juego para abajo -->
+    <div class="contenido-de-la-pagina">
+
+        <div class="contenedor-principal">
+
+            <section class="contenedor-juego">
+                <!-- Imagen del juego -->
+                <div class="contenedor-imagen-juego-full">
+                    <div class="contenedor-interior">
+                        <img class="imagen-juego-full" src="assets/img/tomy-vs-daly.png" alt="tomy vs daly juego">
+                        <a class="btn-play "> <img src="./assets/img/btn-play.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <!-- Botonera -->
+                <div class="opciones-juego-contenedor-juego">
+
+                    <button class="boton-compartir"> <img src="./assets/img/compartir.svg" alt="">Compartir</button>
+
+                    <div class="botones-fav-fullscreen-incrustar">
+                        <img class="corazon-botonera" src="assets/img/corazon.svg" alt="icono agregar favorito">
+                        <img src="assets/img/icono-fullscreen.svg" alt="icono fullscreen">
+                        <img src="assets/img/icono-incrustar.svg" alt="icono incrustar">
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <!-- INSTRUCCIONES para jugar -->
+
+            <section class="contenedor-info-extra">
+                <div class="titulos-informacion-extra">
+                    <img src="assets/img/icono-info.svg" alt="icono informacion">
+                    <h2>¿Cómo jugar al Cuatro en linea?</h2>
+                </div>
+                <div class="descripcion">
+                    <p>
+                        ¡Disfruta de todo un clásico de los juegos de mesa! Pásate horas y horas jugando contra un amigo
+                        o
+                        el
+                        ordenador a el clásico Conecta 4. El 4 en línea es un juego de estrategia para dos jugadores que
+                        se
+                        juega en un tablero de 6 filas y 7 columnas. El objetivo es ser el primero en conectar cuatro
+                        fichas
+                        del
+                        mismo color de forma horizontal, vertical o diagonal. Los jugadores se turnan para colocar
+                        fichas en
+                        el
+                        tablero, y el juego termina cuando un jugador logra la conexión de cuatro fichas o cuando el
+                        tablero
+                        se
+                        llena sin ganador, lo que resulta en un empate. El juego requiere planificación y estrategia
+                        para
+                        evitar
+                        que el oponente gane.
+                    </p>
+                </div>
+
+
+                <!-- Controles -->
+                <div class="titulos-informacion-extra">
+                    <img src="assets/img/icono-controles.svg" alt="icono controles">
+                    <h2>Controles</h2>
+                </div>
+                <div class="descripcion">
+                    <h3>Controles de teclado:</h3>
+                    <ul class="lista-de-indicaciones">
+                        <li class="control-teclado-descripcion">Usa las teclas de flecha izquierda y derecha para
+                            moverte por las
+                            columnas del tablero.</li>
+                        <li class="control-teclado-descripcion"> Presiona la tecla "Espacio" o "Enter" para soltar una
+                            ficha en la
+                            columna seleccionada. </li>
+                    </ul>
+
+                    <div class="ayuda-imagenes-controles">
+                        <img src="assets/img/controles-flechas1.png" alt="imagen teclado flechas">
+                        <img src="assets/img/controles-enter.png" alt="imagen teclado enter">
+                    </div>
+                </div>
+
+
+                <!-- Gameplays -->
+                <div class="titulos-informacion-extra">
+                    <img src="assets/img/icono-play.svg" alt="icono play">
+                    <h2>Gameplays</h2>
+                </div>
+                <div class="descripcion">
+                    <div class="cards-media">
+                        <img src="./assets/img/conecta4-1.png" alt="">
+                        <img src="./assets/img/conecta4-2.png" alt="">
+                        <img src="./assets/img/conecta4-3.png" alt="">
+                        <img src="./assets/img/conecta4-4.png" alt="">
+                    </div>
+                </div>
+
+
+                <!-- Comentarios -->
+
+                <div class="container-comentarios">
+                    <div class="titulos-informacion-extra">
+                        <img src="assets/img/icono-comentarios.svg" alt="icono comentarios">
+                        <h2>Comentarios</h2>
+                    </div>
+
+                    <div class="container-agregar-comentario">
+                        <img src="./assets/img/imagen-avatar1.png" alt="imagen-avatar">
+                        <input type="text" placeholder="Agrega un comentario">
+                        <div class="agregar-comentario-botones">
+                            <button>Cancelar</button>
+                            <button class="boton-comentar">Comentar</button>
+                        </div>
+                    </div>
+
+                    <!-- <! Comentarios uno atras de otro -->
+                    <div class="comentarios-container">
+                        <div class="comentario">
+                            <img class="avatar" src="./assets/img/imagen-avatar1.png" alt="">
+                            <div class="texto-de-los-comentarios">
+                                <div class="primer-linea">
+                                    <p class="mail">@matteo8685</p>
+                                    <p class="hace_tantas_horas">hace 2 horas </p>
+                                </div>
+                                <div class="segunda-linea">
+                                    <p class="comentario-texto">Que buen juego me gusto mucho!! </p>
+                                </div>
+                                <div class="tercera-linea">
+                                    <img src="./assets/img/icono-voto-positivo.svg" alt="">
+                                    <img src="./assets/img/icono-voto-negativo.svg" alt="">
+                                    <p class="">Responder</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="comentario">
+                            <img class="avatar" src="./assets/img/imagen-avatar1.png" alt="">
+                            <div class="texto-de-los-comentarios">
+                                <div class="primer-linea">
+                                    <p class="mail">@matilda234</p>
+                                    <p class="hace_tantas_horas">hace 4 horas </p>
+                                </div>
+                                <div class="segunda-linea">
+                                    <p class="comentario-texto">Es sencillo de entender, pero tiene una profundidad
+                                        estratégica que te engancha. ¡No puedo evitar sentirme un maestro de la
+                                        estrategia cada vez que juego! ¿Alguien más aquí piensa lo mismo?</p>
+                                </div>
+                                <div class="tercera-linea">
+                                    <img src="./assets/img/icono-voto-positivo.svg" alt="">
+                                    <img src="./assets/img/icono-voto-negativo.svg" alt="">
+                                    <p class="">Responder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comentario">
+                            <img class="avatar" src="./assets/img/imagen-avatar1.png" alt="">
+                            <div class="texto-de-los-comentarios">
+                                <div class="primer-linea">
+                                    <p class="mail">@jose300</p>
+                                    <p class="hace_tantas_horas">hace 1 día </p>
+                                </div>
+                                <div class="segunda-linea">
+                                    <p class="comentario-texto">Me encanta jugar a 4 en línea. Es un juego clásico que
+                                        siempre me divierte. Es genial para pasar el rato con amigos y familiares.
+                                        ¿Alguien más aquí disfruta jugando? 😊🎮👍</p>
+                                </div>
+                                <div class="tercera-linea">
+                                    <img src="./assets/img/icono-voto-positivo.svg" alt="">
+                                    <img src="./assets/img/icono-voto-negativo.svg" alt="">
+                                    <p class="">Responder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comentario">
+                            <img class="avatar" src="./assets/img/imagen-avatar1.png" alt="">
+                            <div class="texto-de-los-comentarios">
+                                <div class="primer-linea">
+                                    <p class="mail">@benjamin5</p>
+                                    <p class="hace_tantas_horas">hace 4 días </p>
+                                </div>
+                                <div class="segunda-linea">
+                                    <p class="comentario-texto">Lo he jugado un par de veces, pero honestamente, me
+                                        parece un poco monótono. Prefiero juegos con más acción y desafío. Entiendo que
+                                        a mucha gente le guste, pero simplemente no es para mí. 🤷‍♂️👎</p>
+                                </div>
+                                <div class="tercera-linea">
+                                    <img src="./assets/img/icono-voto-positivo.svg" alt="">
+                                    <img src="./assets/img/icono-voto-negativo.svg" alt="">
+                                    <p class="">Responder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comentario">
+                            <img class="avatar" src="./assets/img/imagen-avatar1.png" alt="">
+                            <div class="texto-de-los-comentarios">
+                                <div class="primer-linea">
+                                    <p class="mail">@sara458</p>
+                                    <p class="hace_tantas_horas">hace 10 días </p>
+                                </div>
+                                <div class="segunda-linea">
+                                    <p class="comentario-texto">No es mi favorito, pero puede ser entretenido para pasar
+                                        el tiempo. Aunque no me emociona mucho, reconozco que requiere cierta
+                                        estrategia. Cada uno tiene sus gustos, ¿verdad? 🙂</p>
+                                </div>
+                                <div class="tercera-linea">
+                                    <img src="./assets/img/icono-voto-positivo.svg" alt="">
+                                    <img src="./assets/img/icono-voto-negativo.svg" alt="">
+                                    <p class="">Responder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        <aside class="publicidad">
+
+            <div class="publicidad-contenedores">
+                <div class="publicidad1"><img src="./assets/img/publicidad1.png" alt=""></div>
+            </div>
+
+            <div class="publicidad-contenedores">
+                <div class="publicidad2"><img src="./assets/img/publicidad2.jpg" alt=""></div>
+            </div>
+            <div class="publicidad-contenedores">
+                <div class="publicidad3"><img src="./assets/img/publicidad3.jpg" alt=""></div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="divisor"></div>
+        <div class="info">
+            <div class="logosContainer">
+                <div class="logoSuperJuegos"  >
+                    <img class="logoCircular" src="./assets/img/logo.svg" alt="logo super juegos">
+                    <img class="letrasDelLogo" src="./assets/img/texto-logo.svg" alt="">
+                </div>
+                <div class="redesSociales">
+                    <img src="./assets/img/facebook.svg" alt="logo facebook">
+                    <img src="./assets/img/instagram.svg" alt="logo instagram">
+                    <img src="./assets/img/twitter.svg" alt="logo twitter">
+                </div>
+            </div>
+            <div class="acerca-de infoTextos">
+                <a>Acerca de</a>
+                <a>Super Juegos</a>
+                <a>Tendencias</a>
+                <a>Blog</a>
+                <a>Developers</a>
+                <a>Trabaja con nosotros</a>
+
+            </div>
+            <div class="ayuda infoTextos">
+                <a>Ayuda</a>
+                <a>FAQ's</a>
+                <a>Soporte tecnico</a>
+                <a>Centro de seguridad</a>
+                <a>Terminos de uso</a>
+            </div>
+            <div class="idiomas infoTextos">
+                <a>Idiomas</a>
+                <a>Español</a>
+                <a>English</a>
+                <a>Italiano</a>
+                <a>Deutsch</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="linea"></div>
+            <p>Copyright © 2023, SuperJuegos , Inc . All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="./js/modoEjecucion.js"></script>
+
+</body>
+
+</html>

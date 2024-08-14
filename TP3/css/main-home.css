@@ -1,0 +1,497 @@
+@import url('styles.css');
+@import url('footer.css');
+@import url('header.css');
+
+/* Carruseles */
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(217, 217, 217, 0.70);
+  z-index: 9;
+}
+
+
+
+/* barra de carga */
+
+@media screen {
+
+  .loader {
+    width: 15em;
+    height: 3em;
+    position: absolute;
+    top: 50%;
+    border: 2px solid var(--primario);
+    z-index: 11;
+    border-radius: 15px;
+  }
+
+  .barraDeCarga {
+    width: 0;
+    height: 100%;
+    border-radius: 8px;
+    -webkit-animation: progreso 5s linear 1; 
+    animation: progreso 5s linear 1;
+    animation-fill-mode: forwards; 
+    background: var(--primario);
+  }
+
+  .texto {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2em;
+
+    width: 12.5em;
+    height: 100%;
+
+    text-align: center;
+
+    color: #AAAFFF;
+
+    mix-blend-mode: multiply;
+  }
+
+  .texto:after {
+    content: '100%';
+    -webkit-animation: porcentaje 5s linear 1;
+    animation: porcentaje 5s linear 1;
+  }
+
+  @-webkit-keyframes progreso {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes progreso {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+
+  @-webkit-keyframes porcentaje {
+    0% {
+      content: '0%';
+    }
+
+    25% {
+      content: '25%';
+    }
+
+    50% {
+      content: '50%';
+    }
+
+    75% {
+      content: '75%';
+    }
+
+    100% {
+      content: '100%';
+    }
+  }
+
+  @keyframes porcentaje {
+    0% {
+      content: '0%';
+    }
+
+    25% {
+      content: '25%';
+    }
+
+    50% {
+      content: '50%';
+    }
+
+    75% {
+      content: '75%';
+    }
+
+    100% {
+      content: '100%';
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* Carrusel Grande Mobile */
+
+.img-desktop {
+  display: none;
+}
+
+
+
+/* El que tiene el titulo */
+.container-componente-carousel-grande {
+  /* display: flex; */
+  /* display: none; */
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--negro, #282b30);
+  width: 100%;
+}
+
+.container-componente-carousel-grande .titulo-carusel {
+  color: var(--blanco);
+  margin-top: 20px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.carrusel-grande-container {
+  width: 100%;
+  height: 330px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  /* overflow: hidden; Oculta el desbordamiento horizontal */
+}
+
+
+.carrusel-grande-container .boton-izq,
+.carrusel-grande-container .boton-der {
+  width: 70px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrusel-grande-container .boton-izq img,
+.carrusel-grande-container .boton-der img {
+  height: 58px;
+}
+
+.carrusel-grande-container .imagenes-container {
+  max-width: 1200px;
+  height: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.carrusel-grande-container .imagenes {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+
+}
+
+.carrusel-grande-container .imagenes .img {
+  /* width: 1200px; */
+  width: 500px;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+.carrusel-grande-container .imagenes .img img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  /* object-position: right; */
+}
+
+
+.skew-animation {
+  transform: skewX(10deg);
+  /* Inclina 15 grados hacia la derecha (ajusta según tus necesidades) */
+  transition: transform 0.1s ease-in-out;
+}
+
+.skew-animation-left {
+  transform: skewX(-10deg);
+  /* Inclina 15 grados hacia la derecha (ajusta según tus necesidades) */
+
+  transition: transform 0.1s ease-in-out;
+}
+
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Optionally, you can style the track and thumb if needed */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+
+
+
+
+
+
+
+/* CARUSEL 2*/
+.container-componente-carousel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+}
+
+.container-carrusel2 {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container-carrusel2 .carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 223px;
+  margin: 15px;
+  text-align: center;
+  border: 3px solid grey;
+  overflow: hidden;
+}
+
+.boton-derecha2 {
+  margin-left: 15px;
+}
+
+.boton-derecha2:hover,
+.boton-izquierda:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+
+.container-carrusel2 .carousel .slide {
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 223px;
+  height: 260px;
+  background: #282B30;
+  margin: 15px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+*/ .container-carrusel2 .carousel .slide {
+  width: 300px;
+  height: 200px;
+  background-color: #f0f0f0;
+  transition: transform 0.5s;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.container-carrusel2 .carousel .slide:hover {
+  transform: scale(1.10);
+  box-shadow: var(--sombra3);
+}
+
+
+.container-carrusel2 .carousel .slide img {
+  width: 219px;
+  height: 158px;
+  display: flex;
+}
+
+.container-carrusel2 .carousel .slide .titulo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 147px;
+}
+
+.container-carrusel2 .carousel .slide h2 {
+  color: var(--blanco);
+  margin: 3px;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.container-carrusel2 .carousel .slide .boton-jugar {
+  height: 24px;
+  width: 122px;
+  font: var(--texto-botones);
+  background: var(--primario);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px 10px;
+  color: black;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container-carrusel2 .carousel .slide .boton-jugar:hover {
+  background: var(--secundario);
+  cursor: pointer;
+}
+
+.container-carrusel2 .carousel .slide p {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: var(--primario-l1, #ffffb8);
+  font: var(--texto-chico);
+}
+
+.container-carrusel2 .carousel .slide .titulo-card img {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+}
+
+.container-componente-carousel .titulo-carusel {
+  color: var(--blanco);
+  margin-top: 10px;
+  align-self: flex-start;
+  padding-left: 20px;
+}
+
+/* css extra slide carrito */
+
+.container-carrusel2 .carousel .slide .precio {
+  font: var(--texto-chico);
+  color: #37D200;
+  font-weight: bold;
+}
+
+.container-carrusel2 .carousel .slide .contenedor-carrito-precio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+.container-carrusel2 .carousel .slide .icono-carrito img {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+/* css card gratis */
+
+.container-carrusel2 .carousel .slide .titulo-card .precio-gratis {
+  color: red;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.container-carrusel2 .carousel .slide .contenedor-etiqueta-gratis {
+  width: 73px;
+  height: 27px;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 66%;
+  border-radius: 5px 0 0 5px;
+}
+
+.container-carrusel2 .carousel .slide .contenedor-etiqueta-gratis p {
+  color: black;
+}
+
+.container-carrusel2 .carousel .slide .titulo-card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 147px;
+  margin-top: 30px;
+}
+
+/*class para click carrito  */
+.oculto {
+  display: none;
+}
+
+@media screen and (min-width : 992px) {
+
+
+  .loader {
+    width: 25em;
+    height: 4em;
+  }
+
+  .texto {
+    font-size: 2em;
+
+  }
+
+
+
+
+  .container-componente-carousel-grandeW .titulo-carusel {
+    padding: 0 0;
+    padding-left: 50px;
+    text-align: center;
+  }
+
+
+  .carrusel-grande-container .imagenes-container {
+    height: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+
+  }
+
+  .carrusel-grande-container .imagenes .img img.img-desktop {
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .carrusel-grande-container .imagenes .img {
+    /* width: 1200px; */
+    width: 1200px;
+  }
+
+  img.img-mobile {
+    display: none;
+  }
+
+
+  .container-componente-carousel .titulo-carusel {
+    padding-left: 30px;
+  }
+
+
+}
