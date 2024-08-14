@@ -1,12 +1,24 @@
-# How can you see all projects?
+# Interfaces de Usuario
 
-For see all projects, please, press on the links bellow 
+## Descripción
 
-## Figma Project: 
-https://jesusdiazdeveloper.github.io/interfaces/TP2/
+La materia **Interfaces de Usuario** está dedicada al estudio de UI (Interfaces de Usuario) y UX (Experiencia de Usuario). En esta asignatura, nos enfocamos en comprender y aplicar conceptos clave para diseñar interfaces que no solo sean visualmente atractivas, sino también intuitivas y fáciles de usar.
 
-## Html, Css and Javascript Project: 
-https://jesusdiazdeveloper.github.io/interfaces/TP3/
+## Enlaces del Proyecto
 
-## Parallax Project: 
-https://jesusdiazdeveloper.github.io/interfaces/TP4/
+### 1. [Diseño en Figma](#)
+
+En este enlace, encontrarán una página simple que contiene enlaces que los redirigirán hacia el **Design System** creado para una página web de videojuegos y otro hacia el modo presentación, donde podrán navegar dicho diseño y comprobar su funcionalidad. *(La única página de juego disponible en la maqueta es **4 en línea** de **Tommy y Dally**).*
+
+### 2. [Diseño de la página con HTML, CSS y JavaScript](#)
+
+Aquí se desarrolló la mayor parte de la página web, utilizando animaciones simples como **loaders de carga** con **Keyframes** y animaciones **hover**. Además, se emplearon **Flexbox** y **Grid** para los layouts.
+
+### 3. [Desarrollo de un juego mediante Canvas y JavaScript](#)
+
+En este caso, desarrollamos la lógica de un juego de **4 en línea** utilizando **Canvas** y programación orientada a objetos en JavaScript, añadiendo un toque divertido con los personajes de **Los Simpsons**.
+
+### 4. [Técnicas Avanzadas de CSS y JavaScript](#)
+
+Este proyecto se enfoca en la aplicación de técnicas avanzadas de CSS, como **Parallax**, transiciones y efectos, así como el uso de **Sprite Sheets**, para mejorar la experiencia visual del usuario en una landing page diseñada para un juego basado en los personajes de **Spidey**. Además, se utilizó JavaScript de manera intensiva, profundizando en su uso para agregar interactividad y funcionalidad dinámica al sitio.
+
